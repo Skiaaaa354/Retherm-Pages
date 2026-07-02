@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="home.title">RETHERM – Wärmerückgewinnung aus Abgas | Komplettanlagen von Ganzenmüller</title>
+  <meta name="description" data-i18n-content="home.desc" content="Überall, wo heißes Abgas nach außen geht, verschenken Sie Energie. RETHERM macht daraus eine nutzbare Wärmequelle – als schlüsselfertige Komplettanlage. Vom Kilowatt- bis in den Megawattbereich, branchenoffen, förderfähig.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<!-- ================= Header ================= -->
+<header class="site-head">
+  <div class="wrap site-head__bar">
+    <a class="brand" href="index.html" aria-label="RETHERM – zur Startseite">
+      <span class="brand__mark">RETHERM</span>
+      <span class="brand__sub" data-i18n="brand.sub">Wärmerückgewinnung aus Abgas · powered by Ganzenmüller</span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+      <div class="nav-item">
+        <button type="button" class="nav-sub-toggle" aria-expanded="false" data-i18n="nav.sources">Abgasquellen</button>
+        <div class="nav-sub">
+          <a href="abgas-industrieofen.html" data-i18n="nav.srcOven">Industrieöfen</a>
+          <a href="abgas-dampfkessel.html" data-i18n="nav.srcBoiler">Dampfkessel</a>
+          <a href="abgas-bhkw.html" data-i18n="nav.srcChp">Blockheizkraftwerke</a>
+          <a href="abgas-trocknung.html" data-i18n="nav.srcDrying">Trocknungsanlagen</a>
+          <a href="abgas-backofen.html" data-i18n="nav.srcBakery">Backöfen</a>
+        </div>
+      </div>
+      <a href="foerderung.html" data-i18n="nav.funding">Förderung</a>
+      <a href="referenzen.html" data-i18n="nav.refs">Referenzen</a>
+      <a href="unternehmen.html" data-i18n="nav.company">Unternehmen</a>
+      <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
+      <a href="potenzial-check.html" class="nav-cta" data-i18n="nav.check">Potenzial-Check</a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Sprache / Language">
+      <button type="button" id="lang-de" aria-pressed="true">DE</button>
+      <button type="button" id="lang-en" aria-pressed="false">EN</button>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= Hero ================= -->
+  <section class="hero">
+    <svg class="hero__flow" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <path d="M860 700 C 855 560, 875 470, 862 340 C 852 240, 870 130, 861 0"/>
+      <path d="M960 700 C 968 570, 950 460, 963 330 C 972 230, 955 120, 964 0"/>
+      <path d="M1060 700 C 1054 580, 1072 480, 1060 350 C 1050 250, 1068 140, 1059 0"/>
+      <path d="M1145 700 C 1150 560, 1136 450, 1147 320 C 1155 220, 1140 110, 1148 0"/>
+      <path d="M760 700 C 754 590, 770 480, 758 360 C 748 260, 766 150, 757 0"/>
+    </svg>
+    <div class="wrap hero__inner">
+      <p class="tag tag--heat" data-i18n="home.heroTag">Wärmerückgewinnung aus Abgas · Komplettanlagen</p>
+      <h1 data-i18n-html="home.heroH1">Überall, wo heißes Abgas nach außen geht, <em>verschenken Sie Energie.</em></h1>
+      <p class="hero__lead" data-i18n="home.heroLead">Wir machen daraus eine nutzbare Wärmequelle – als schlüsselfertige Anlage, geplant und gebaut, nicht nur geliefert. Vom Kilowatt- bis in den Megawattbereich, branchenoffen: Lebensmittel, Metall, Chemie, Keramik, Trocknung, Blockheizkraftwerke und mehr.</p>
+      <div class="hero__cta">
+        <a class="btn btn--heat" href="potenzial-check.html" data-i18n="home.heroCta1">Abwärme-Potenzial prüfen</a>
+        <a class="btn btn--ghost-light" href="#quellen" data-i18n="home.heroCta2">Abgasquellen ansehen</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <div class="stat__num" data-count="25" data-count-suffix="&thinsp;%">25&thinsp;%</div>
+          <div class="stat__label" data-i18n="home.stat1">der Energie zurückgewonnen – garantiert</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" data-count="100" data-count-suffix="+">100+</div>
+          <div class="stat__label" data-i18n="home.stat2">realisierte Anlagen</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">kW–MW</div>
+          <div class="stat__label" data-i18n="home.stat3">jede Größenordnung, jede Branche</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">1980</div>
+          <div class="stat__label" data-i18n="home.stat4">Meisterbetrieb – seit über 45 Jahren</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Trust-Leiste ================= -->
+  <div class="trust">
+    <div class="wrap">
+      <span data-i18n="trust.tuv">Vom TÜV Süd geprüft &amp; zertifiziert</span>
+      <span data-i18n-html="trust.quarter"><b>¼</b> der Energie zurück – garantiert</span>
+      <span data-i18n-html="trust.plants"><b>100+</b> realisierte Anlagen</span>
+      <span data-i18n-html="trust.since">Meisterbetrieb seit <b>1980</b></span>
+      <span data-i18n="trust.funding">Förderfähig nach EEW</span>
+    </div>
+  </div>
+
+  <!-- ================= 01 Selbstqualifikation ================= -->
+  <section class="section" id="check">
+    <div class="wrap">
+      <div class="split">
+        <div class="rv">
+          <p class="tag" data-i18n="home.q.tag">01 — Der Schnelltest</p>
+          <h2 data-i18n="home.q.h2">Trifft das auf Ihren Betrieb zu?</h2>
+          <p data-i18n="home.q.p1">Sie müssen keine Branche ankreuzen und keinen Katalog wälzen. Ob sich Wärmerückgewinnung für Sie lohnt, entscheidet eine einzige Bedingung – und die erkennen Sie selbst: Aus Ihrem Betrieb geht heißes Abgas nach draußen.</p>
+          <p data-i18n="home.q.p2">Ob das Abgas aus einem Industrieofen, Dampfkessel, Blockheizkraftwerk, einer Trocknungsanlage oder einer Backofenanlage stammt, ist zweitrangig – die Physik ist dieselbe. Wir kühlen es ab, bevor es durch den Kamin verschwindet, und geben die Wärme zurück in Ihren Betrieb.</p>
+          <p data-i18n="home.q.p3">Je heißer und je länger es strömt, desto besser die Rechnung. Und mit steigenden CO₂-Preisen wird das Wegwerfen jedes Jahr teurer.</p>
+        </div>
+        <div class="rv">
+          <ul class="loss-list">
+            <li>
+              <span class="val">≥ 150&nbsp;°C</span>
+              <span data-i18n="home.q.l1">Abgastemperatur – unser Sweetspot liegt bei 150–250 °C, machbar ist deutlich mehr.</span>
+            </li>
+            <li>
+              <span class="val">&gt; 1.500&nbsp;h/a</span>
+              <span data-i18n="home.q.l2">Betriebsstunden – je kontinuierlicher der Prozess, desto schneller amortisiert sich die Anlage.</span>
+            </li>
+            <li>
+              <span class="val">Wärmebedarf</span>
+              <span data-i18n="home.q.l3">im eigenen Haus: Heizung, Warmwasser oder Prozesswärme – dorthin fließt die zurückgewonnene Energie.</span>
+            </li>
+          </ul>
+          <p style="margin-top: 20px">
+            <a class="btn" href="potenzial-check.html" data-i18n="home.q.cta">Direkt zum Potenzial-Check</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 02 Abgasquellen ================= -->
+  <section class="section section--dark" id="quellen">
+    <div class="wrap">
+      <div class="section__head rv">
+        <p class="tag" data-i18n="home.src.tag">02 — Abgasquellen</p>
+        <h2 data-i18n="home.src.h2">Wo Ihr Abgas herkommt, wissen Sie. Wir kennen den Rest.</h2>
+        <p class="lead" data-i18n="home.src.lead">Jede Quelle hat ihre Eigenheiten – Temperaturniveau, Volumenstrom, Betriebsprofil, Kondensat. Deshalb planen wir jede Anlage individuell. Was gleich bleibt: die Komplettlösung aus einer Hand.</p>
+      </div>
+      <div class="src-grid rv">
+        <a class="src-card" href="abgas-industrieofen.html">
+          <span class="src-temp">200–500&thinsp;°C</span>
+          <h3 data-i18n="home.src.c1h">Industrieöfen</h3>
+          <p data-i18n="home.src.c1p">Härten, Schmelzen, Brennen, Thermoprozess – hohe Temperaturen und lange Laufzeiten machen Öfen zur ergiebigsten Abwärmequelle.</p>
+          <span class="src-more" data-i18n="home.src.more1">Mehr erfahren →</span>
+        </a>
+        <a class="src-card" href="abgas-dampfkessel.html">
+          <span class="src-temp">160–230&thinsp;°C</span>
+          <h3 data-i18n="home.src.c2h">Dampfkessel</h3>
+          <p data-i18n="home.src.c2p">Der Klassiker: Abgaswärme hinter dem Kessel nutzen und den Wirkungsgrad der Dampferzeugung spürbar anheben.</p>
+          <span class="src-more" data-i18n="home.src.more2">Mehr erfahren →</span>
+        </a>
+        <a class="src-card" href="abgas-bhkw.html">
+          <span class="src-temp">400–550&thinsp;°C</span>
+          <h3 data-i18n="home.src.c3h">Blockheizkraftwerke</h3>
+          <p data-i18n="home.src.c3p">BHKW-Abgas ist extrem heiß und fällt über tausende Betriebsstunden an – ideale Bedingungen für die Nachrüstung.</p>
+          <span class="src-more" data-i18n="home.src.more3">Mehr erfahren →</span>
+        </a>
+        <a class="src-card" href="abgas-trocknung.html">
+          <span class="src-temp">60–150&thinsp;°C</span>
+          <h3 data-i18n="home.src.c4h">Trocknungsanlagen</h3>
+          <p data-i18n="home.src.c4p">Warme, feuchte Abluft steckt voller Energie – inklusive der Kondensationswärme, die andere Systeme verschenken.</p>
+          <span class="src-more" data-i18n="home.src.more4">Mehr erfahren →</span>
+        </a>
+        <a class="src-card" href="abgas-backofen.html">
+          <span class="src-temp">200–300&thinsp;°C</span>
+          <h3 data-i18n="home.src.c5h">Backöfen</h3>
+          <p data-i18n="home.src.c5p">Unser Heimspiel: Rauchgas und Schwaden von bis zu sechs Öfen in einer Anlage – gemeinsam mit WP Bakery Technologies.</p>
+          <span class="src-more" data-i18n="home.src.more5">Mehr erfahren →</span>
+        </a>
+        <a class="src-card" href="potenzial-check.html">
+          <span class="src-temp">?&thinsp;°C</span>
+          <h3 data-i18n="home.src.c6h">Ihre Quelle ist nicht dabei?</h3>
+          <p data-i18n="home.src.c6p">Wenn heißes Abgas nach außen geht, lohnt der Blick – egal woraus. Schicken Sie uns Ihre Eckdaten.</p>
+          <span class="src-more" data-i18n="home.src.more6">Zum Potenzial-Check →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 03 Prinzip ================= -->
+  <section class="section" id="prinzip">
+    <div class="wrap">
+      <div class="section__head rv">
+        <p class="tag" data-i18n="home.prin.tag">03 — Das Prinzip</p>
+        <h2 data-i18n="home.prin.h2">Abgas rein. Wärme zurück. Kamin bleibt Kamin.</h2>
+        <p class="lead" data-i18n="home.prin.lead">Ein Glattrohrwärmetauscher überträgt die Wärme des Abgases indirekt auf Wasser. Ein Pufferspeicher verteilt sie dorthin, wo Ihr Betrieb sie braucht. Der Saugzug regelt den Kaminzug zentral, ein Bypass sichert den Produktionsbetrieb bei Wartung und Störung.</p>
+      </div>
+
+      <figure class="schema-frame rv">
+        <svg viewBox="0 0 960 430" role="img" aria-labelledby="schema-title">
+          <title id="schema-title" data-i18n="home.prin.schemaTitle">Anlagenschema der RETHERM Wärmerückgewinnung</title>
+          <style>
+            .s-box { fill: none; stroke: #1d2126; stroke-width: 2; }
+            .s-hot { fill: none; stroke: #e8501e; stroke-width: 2.5; }
+            .s-cool { fill: none; stroke: #4a6577; stroke-width: 2.5; }
+            .s-water { fill: none; stroke: #4a6577; stroke-width: 2; stroke-dasharray: 7 5; }
+            .s-bypass { fill: none; stroke: #e8501e; stroke-width: 1.5; stroke-dasharray: 4 5; }
+            .s-label { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .08em; fill: #1d2126; }
+            .s-label-sub { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .06em; fill: #6b7178; }
+            .s-temp-hot { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; font-weight: 500; fill: #c23f12; }
+            .s-temp-cool { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; font-weight: 500; fill: #4a6577; }
+            .s-flame { fill: #e8501e; }
+            .s-coil { fill: none; stroke: #e8501e; stroke-width: 2; }
+          </style>
+
+          <!-- Abgasquellen -->
+          <g>
+            <rect class="s-box" x="30" y="150" width="72" height="86"/>
+            <rect class="s-box" x="118" y="150" width="72" height="86"/>
+            <rect class="s-box" x="206" y="150" width="72" height="86"/>
+            <path class="s-flame" d="M62 214 q-8 -12 2 -22 q-1 8 6 10 q5 -7 3 -15 q13 9 7 24 q-5 9 -18 3z"/>
+            <path class="s-flame" d="M150 214 q-8 -12 2 -22 q-1 8 6 10 q5 -7 3 -15 q13 9 7 24 q-5 9 -18 3z"/>
+            <path class="s-flame" d="M238 214 q-8 -12 2 -22 q-1 8 6 10 q5 -7 3 -15 q13 9 7 24 q-5 9 -18 3z"/>
+            <text class="s-label" x="30" y="268" data-i18n="home.prin.sSources">ABGASQUELLEN</text>
+            <text class="s-label-sub" x="30" y="284" data-i18n="home.prin.sSourcesSub">OFEN · KESSEL · BHKW · TROCKNER</text>
+          </g>
+
+          <!-- Abgas-Sammelleitung -->
+          <path class="s-hot" d="M66 150 V110 H430"/>
+          <path class="s-hot" d="M154 150 V110"/>
+          <path class="s-hot" d="M242 150 V110"/>
+          <path class="s-flow-hot" d="M66 150 V110 H430" aria-hidden="true"/>
+          <path class="s-hot" d="M418 104 l14 6 l-14 6"/>
+          <text class="s-label" x="66" y="92" data-i18n="home.prin.sFlue">HEISSES ABGAS</text>
+          <text class="s-temp-hot" x="330" y="130">≈ 250 °C</text>
+
+          <!-- RETHERM Einheit -->
+          <g>
+            <rect class="s-box" x="430" y="62" width="200" height="140"/>
+            <path class="s-coil" d="M450 90 h160 m0 22 h-160 m0 22 h160 m0 22 h-160"/>
+            <path class="s-coil" d="M610 90 a11 11 0 0 1 0 22 m-160 0 a11 11 0 0 0 0 22 m160 0 a11 11 0 0 1 0 22"/>
+            <text class="s-label" x="430" y="232">RETHERM</text>
+            <text class="s-label-sub" x="430" y="248" data-i18n="home.prin.sUnit">GLATTROHRWÄRMETAUSCHER + SAUGZUG</text>
+          </g>
+
+          <!-- Gekühltes Abgas zum Kamin -->
+          <path class="s-cool" d="M630 110 H760 V40"/>
+          <path class="s-cool" d="M754 52 l6 -14 l6 14"/>
+          <rect class="s-box" x="744" y="18" width="32" height="10"/>
+          <text class="s-label" x="792" y="36" data-i18n="home.prin.sStack">KAMIN</text>
+          <text class="s-temp-cool" x="792" y="52">≈ 60 °C</text>
+
+          <!-- Bypass -->
+          <path class="s-bypass" d="M340 110 V36 H760"/>
+          <text class="s-label-sub" x="352" y="30">BYPASS</text>
+
+          <!-- Wasserkreis zum Speicher -->
+          <path class="s-water" d="M530 202 V300 H610"/>
+          <path class="s-flow-water" d="M530 202 V300 H610" aria-hidden="true"/>
+          <path class="s-water" d="M598 294 l12 6 l-12 6"/>
+          <text class="s-temp-cool" x="544" y="262" data-i18n="home.prin.sFlow">VORLAUF ≈ 70 °C</text>
+
+          <!-- Pufferspeicher -->
+          <g>
+            <rect class="s-box" x="610" y="252" width="90" height="120" rx="14"/>
+            <path class="s-box" d="M610 282 h90 M610 342 h90" stroke-width="1"/>
+            <text class="s-label" x="610" y="396" data-i18n="home.prin.sBuffer">PUFFERSPEICHER</text>
+          </g>
+
+          <!-- Abnehmer -->
+          <path class="s-water" d="M700 312 H820"/>
+          <path class="s-flow-water" d="M700 312 H820" aria-hidden="true"/>
+          <path class="s-water" d="M808 306 l12 6 l-12 6"/>
+          <g>
+            <rect class="s-box" x="826" y="256" width="110" height="112"/>
+            <text class="s-label" x="840" y="286" data-i18n="home.prin.sUse1">HEIZUNG</text>
+            <text class="s-label" x="840" y="308" data-i18n="home.prin.sUse2">WARMWASSER</text>
+            <text class="s-label" x="840" y="330" data-i18n="home.prin.sUse3">PROZESS-</text>
+            <text class="s-label" x="840" y="352" data-i18n="home.prin.sUse4">WÄRME</text>
+          </g>
+        </svg>
+        <figcaption data-i18n="home.prin.caption">Vereinfachtes Anlagenschema: Das heiße Abgas einer oder mehrerer Quellen wird gesammelt, im Glattrohrwärmetauscher an den Wasserkreis übertragen und über den Pufferspeicher im Betrieb verteilt. Der Bypass sichert den Produktionsbetrieb jederzeit.</figcaption>
+      </figure>
+
+      <div class="schema-legend" aria-hidden="true">
+        <span class="l-heat"><i></i><span data-i18n="home.prin.leg1">Abgas heiß</span></span>
+        <span class="l-cool"><i></i><span data-i18n="home.prin.leg2">Abgas gekühlt</span></span>
+        <span class="l-water"><i></i><span data-i18n="home.prin.leg3">Wasserkreis</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 04 Leistungstiefe ================= -->
+  <section class="section section--dark" id="leistung">
+    <div class="wrap">
+      <div class="section__head rv">
+        <p class="tag" data-i18n="home.svc.tag">04 — Leistungstiefe</p>
+        <h2 data-i18n="home.svc.h2">Die Komplettlösung. Nicht die Komponente.</h2>
+        <p class="lead" data-i18n="home.svc.lead">Reine Wärmetauscher-Hersteller gibt es viele. Selten ist ein Partner, der die fertige Energiequelle liefert: von der Energiebilanz bis zur Inbetriebnahme, alles außer Elektro und Sanitär – aus einer Hand.</p>
+      </div>
+      <div class="comp-grid rv">
+        <article class="comp">
+          <span class="comp__no">L·01</span>
+          <h3 data-i18n="home.svc.c1h">Energiebilanz &amp; Potenzial</h3>
+          <p data-i18n="home.svc.c1p">Wir messen und rechnen, bevor wir anbieten: Temperaturen, Volumenströme, Wärmebedarf – und sagen ehrlich, ob sich die Anlage für Sie trägt.</p>
+        </article>
+        <article class="comp">
+          <span class="comp__no">L·02</span>
+          <h3 data-i18n="home.svc.c2h">Auslegung &amp; Planung</h3>
+          <p data-i18n="home.svc.c2p">Anlagenauslegung bis zu Aufstellplan und Rohrführung – inklusive belastbarer Daten für das Einsparkonzept Ihres Energieberaters.</p>
+        </article>
+        <article class="comp">
+          <span class="comp__no">L·03</span>
+          <h3 data-i18n="home.svc.c3h">Anlagenbau</h3>
+          <p data-i18n="home.svc.c3p">Glattrohrwärmetauscher mit Selbstreinigungsfunktion, Pufferspeicher, Siemens-Steuerung – entwickelt und gefertigt in Deutschland.</p>
+        </article>
+        <article class="comp">
+          <span class="comp__no">L·04</span>
+          <h3 data-i18n="home.svc.c4h">Kaminanbindung</h3>
+          <p data-i18n="home.svc.c4p">Kaminbau ist unser Ursprungshandwerk: Saugzug, Zugregelung und Kaminanbindung kommen bei uns nicht vom Subunternehmer.</p>
+        </article>
+        <article class="comp">
+          <span class="comp__no">L·05</span>
+          <h3 data-i18n="home.svc.c5h">Inbetriebnahme</h3>
+          <p data-i18n="home.svc.c5p">Montage über oder neben der Anlage, Einbindung in Heizungs- und Warmwasserinstallation, Einweisung Ihres Teams – bei laufendem Betrieb.</p>
+        </article>
+        <article class="comp">
+          <span class="comp__no">L·06</span>
+          <h3 data-i18n="home.svc.c6h">Wartung &amp; Service</h3>
+          <p data-i18n="home.svc.c6p">Jährlicher Service aus demselben Haus, TÜV-Süd-zertifizierte Anlagen, serienmäßiger Bypass – Ihre Produktion steht nie.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 05 Potenzial-Check-Teaser ================= -->
+  <section class="section" id="potenzial">
+    <div class="wrap">
+      <div class="section__head rv">
+        <p class="tag" data-i18n="home.pc.tag">05 — Wirtschaftlichkeit</p>
+        <h2 data-i18n="home.pc.h2">Der Abwärme-Potenzial-Check.</h2>
+      </div>
+      <div class="teaser rv">
+        <div class="teaser__body">
+          <p data-i18n="home.pc.p1">Vier Angaben genügen: Abgastemperatur, Brennstoff, Volumenstrom oder Jahresverbrauch, Betriebsstunden. Unser Rechner zeigt Ihnen sofort die geschätzte Einsparung in Kilowattstunden und Euro – ehrlich gerechnet, mit offen ausgewiesenen Annahmen.</p>
+          <p data-i18n="home.pc.p2">Und wenn die Zahlen vielversprechend aussehen, machen Sie mit einem Klick eine qualifizierte Anfrage daraus: Sie erhalten binnen weniger Tage eine persönliche Ersteinschätzung vom Ingenieur – keine Verkaufsmasche, keine Verpflichtung.</p>
+          <p style="margin-top: 24px">
+            <a class="btn btn--heat" href="potenzial-check.html" data-i18n="home.pc.cta">Zum Potenzial-Check</a>
+          </p>
+        </div>
+        <div class="teaser__aside">
+          <p class="tag" data-i18n="home.pc.exTag">Beispielrechnung</p>
+          <div class="stat">
+            <div class="stat__num">210&thinsp;kW</div>
+            <div class="stat__label" data-i18n="home.pc.ex1">rückgewinnbare Leistung bei 8.000 m³/h und 250 °C</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">≈ 65.000&thinsp;€</div>
+            <div class="stat__label" data-i18n="home.pc.ex2">Ersparnis pro Jahr bei 3.000 Betriebsstunden (Erdgas, inkl. CO₂)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 06 Förderung + Referenzen Teaser ================= -->
+  <section class="section" id="mehr" style="padding-top: 0">
+    <div class="wrap">
+      <div class="partner-grid">
+        <article class="partner rv">
+          <span class="tag tag--heat" data-i18n="home.ft.tag">Förderung</span>
+          <h3 data-i18n="home.ft.h3">Förderfähig – als Zuschuss oder KfW-Kredit.</h3>
+          <p data-i18n="home.ft.p">Abwärmenutzung wird über die Bundesförderung EEW gefördert; die Sätze hängen von Unternehmensgröße und Projekt ab. Die goldene Regel: Antrag vor Auftrag – wer früh plant, verliert keine Förderung. Wir liefern die Auslegungsdaten für das Einsparkonzept und stimmen uns direkt mit Ihrem Energieberater ab.</p>
+          <p style="margin-top: 18px"><a class="btn" href="foerderung.html" data-i18n="home.ft.cta">Förderung verstehen</a></p>
+        </article>
+        <article class="partner rv">
+          <span class="tag tag--heat" data-i18n="home.rt.tag">Referenzen</span>
+          <h3 data-i18n="home.rt.h3">Über 100 Anlagen. Vom Handwerk bis zur Großanlage.</h3>
+          <p data-i18n="home.rt.p">Seit Jahrzehnten bauen wir Wärmerückgewinnung für unterschiedliche Abgas-Konstellationen – im Kilowatt- wie im Megawattbereich, im Inland und international. Die Bandbreite ist der Beleg: Wir beherrschen auch Ihre Konstellation.</p>
+          <p style="margin-top: 18px"><a class="btn" href="referenzen.html" data-i18n="home.rt.cta">Referenzen ansehen</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 07 Kontakt-CTA ================= -->
+  <section class="section section--dark" id="kontakt-cta">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="rv">
+          <p class="tag" data-i18n="home.cc.tag">Kontakt</p>
+          <h2 data-i18n="home.cc.h2">Abwärme endlich intelligent nutzen.</h2>
+          <p style="color: rgba(255,255,255,.75)" data-i18n="home.cc.p">Am schnellsten geht es über den Potenzial-Check – oder Sie rufen einfach an. Jede Anfrage beantworten wir persönlich, in der Regel innerhalb von 24 Stunden.</p>
+          <div class="hero__cta">
+            <a class="btn btn--heat" href="potenzial-check.html" data-i18n="home.cc.cta1">Potenzial-Check starten</a>
+            <a class="btn btn--ghost-light" href="kontakt.html" data-i18n="home.cc.cta2">Kontakt aufnehmen</a>
+          </div>
+        </div>
+        <div class="rv">
+          <ul class="contact-direct">
+            <li>
+              <span class="tag" data-i18n="home.cc.dPhone">Telefon</span>
+              <span><a href="tel:+49739270010">07392 – 700 10</a></span>
+            </li>
+            <li>
+              <span class="tag" data-i18n="home.cc.dMail">E-Mail</span>
+              <span><a href="mailto:info@ganzenmueller.de">info@ganzenmueller.de</a></span>
+            </li>
+            <li>
+              <span class="tag" data-i18n="home.cc.dContact">Ansprechpartnerin</span>
+              <span>Ulrike Ganzenmüller</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= Footer ================= -->
+<footer class="site-foot">
+  <div class="wrap">
+    <span data-i18n="foot.legal">© 2026 · RETHERM ist ein Produkt der Ganzenmüller GmbH – für Backöfen gemeinsam angeboten mit der Werner &amp; Pfleiderer Lebensmitteltechnik GmbH.</span>
+    <nav aria-label="Rechtliches">
+      <a href="impressum.html" data-i18n="foot.imprint">Impressum</a>
+      <a href="datenschutz.html" data-i18n="foot.privacy">Datenschutz</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/i18n/home.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

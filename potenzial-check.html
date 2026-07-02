@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="pc.title">Abwärme-Potenzial-Check | RETHERM Wärmerückgewinnung</title>
+  <meta name="description" data-i18n-content="pc.desc" content="Rechnen Sie in einer Minute aus, was Ihre Abwärme wert ist: Abgastemperatur, Brennstoff, Volumenstrom, Betriebsstunden – der RETHERM-Rechner zeigt Einsparung, CO₂ und Amortisation. Persönliche Ersteinschätzung binnen weniger Tage.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<!-- ================= Header ================= -->
+<header class="site-head">
+  <div class="wrap site-head__bar">
+    <a class="brand" href="index.html" aria-label="RETHERM – zur Startseite">
+      <span class="brand__mark">RETHERM</span>
+      <span class="brand__sub" data-i18n="brand.sub">Wärmerückgewinnung aus Abgas · powered by Ganzenmüller</span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+      <div class="nav-item">
+        <button type="button" class="nav-sub-toggle" aria-expanded="false" data-i18n="nav.sources">Abgasquellen</button>
+        <div class="nav-sub">
+          <a href="abgas-industrieofen.html" data-i18n="nav.srcOven">Industrieöfen</a>
+          <a href="abgas-dampfkessel.html" data-i18n="nav.srcBoiler">Dampfkessel</a>
+          <a href="abgas-bhkw.html" data-i18n="nav.srcChp">Blockheizkraftwerke</a>
+          <a href="abgas-trocknung.html" data-i18n="nav.srcDrying">Trocknungsanlagen</a>
+          <a href="abgas-backofen.html" data-i18n="nav.srcBakery">Backöfen</a>
+        </div>
+      </div>
+      <a href="foerderung.html" data-i18n="nav.funding">Förderung</a>
+      <a href="referenzen.html" data-i18n="nav.refs">Referenzen</a>
+      <a href="unternehmen.html" data-i18n="nav.company">Unternehmen</a>
+      <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
+      <a href="potenzial-check.html" class="nav-cta" aria-current="page" data-i18n="nav.check">Potenzial-Check</a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Sprache / Language">
+      <button type="button" id="lang-de" aria-pressed="true">DE</button>
+      <button type="button" id="lang-en" aria-pressed="false">EN</button>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= Seitenkopf ================= -->
+  <section class="page-head">
+    <div class="wrap page-head__inner">
+      <nav class="crumbs" aria-label="Pfad">
+        <a href="index.html" data-i18n="nav.home">Start</a>
+        <span>/</span>
+        <span data-i18n="nav.check">Potenzial-Check</span>
+      </nav>
+      <h1 data-i18n-html="pc.h1">Was ist Ihre Abwärme wert? <em>Rechnen Sie es aus.</em></h1>
+      <p class="lead" data-i18n="pc.lead">Vier Angaben, eine Minute: Der Rechner zeigt Ihnen geschätzte Einsparung, CO₂-Wirkung und Amortisation – mit konservativen, offen ausgewiesenen Annahmen. Danach entscheiden Sie, ob daraus eine Anfrage wird.</p>
+    </div>
+  </section>
+
+  <!-- ================= Trust-Leiste ================= -->
+  <div class="trust">
+    <div class="wrap">
+      <span data-i18n="trust.tuv">Vom TÜV Süd geprüft &amp; zertifiziert</span>
+      <span data-i18n-html="trust.quarter"><b>¼</b> der Energie zurück – garantiert</span>
+      <span data-i18n-html="trust.plants"><b>100+</b> realisierte Anlagen</span>
+      <span data-i18n-html="trust.since">Meisterbetrieb seit <b>1980</b></span>
+      <span data-i18n="trust.funding">Förderfähig nach EEW</span>
+    </div>
+  </div>
+
+  <!-- ================= Rechner ================= -->
+  <section class="section" id="rechner">
+    <div class="wrap">
+      <div class="calc" id="calc">
+        <div class="calc__in">
+          <div class="calc-tabs" role="tablist" aria-label="Berechnungsmodus">
+            <button type="button" role="tab" id="tab-industry" aria-selected="true" aria-controls="calc-industry" data-mode="industry" data-i18n="calc.tabIndustry">Industrie · Abgasdaten</button>
+            <button type="button" role="tab" id="tab-bakery" aria-selected="false" aria-controls="calc-bakery" data-mode="bakery" data-i18n="calc.tabBakery">Bäckerei · Jahresverbrauch</button>
+          </div>
+
+          <!-- Industrie-Modus -->
+          <div id="calc-industry" role="tabpanel" aria-labelledby="tab-industry">
+            <div class="field">
+              <label for="in-temp">
+                <span class="field__name" data-i18n="calc.fTemp">Abgastemperatur</span>
+                <span class="field__val"><span id="val-temp" class="val">200</span> °C</span>
+              </label>
+              <input type="range" id="in-temp" min="80" max="550" step="5" value="200">
+            </div>
+            <div class="field">
+              <label for="in-flow">
+                <span class="field__name" data-i18n="calc.fFlow">Abgas-Volumenstrom</span>
+                <span class="field__val"><span id="val-flow" class="val">3.000</span> m³/h</span>
+              </label>
+              <input type="range" id="in-flow" min="500" max="20000" step="250" value="3000">
+              <p class="field__hint" data-i18n="calc.fFlowHint">Im Betriebszustand, Summe aller angeschlossenen Quellen.</p>
+            </div>
+            <div class="field">
+              <label for="in-hours">
+                <span class="field__name" data-i18n="calc.fHours">Betriebsstunden pro Jahr</span>
+                <span class="field__val"><span id="val-hours" class="val">2.500</span> h/a</span>
+              </label>
+              <input type="range" id="in-hours" min="500" max="8000" step="100" value="2500">
+            </div>
+          </div>
+
+          <!-- Bäckerei-Modus -->
+          <div id="calc-bakery" role="tabpanel" aria-labelledby="tab-bakery" hidden>
+            <div class="field">
+              <label for="in-consumption">
+                <span class="field__name" data-i18n="calc.fConsumption">Jahresverbrauch der Ofenanlage</span>
+                <span class="field__val"><span id="val-consumption" class="val">600.000</span> kWh/a</span>
+              </label>
+              <input type="range" id="in-consumption" min="100000" max="2000000" step="25000" value="600000">
+              <p class="field__hint" data-i18n="calc.fConsumptionHint">Steht auf Ihrer Gas- oder Öl-Jahresabrechnung. Faustregel: In einer Backstube entfallen meist 60–80 % des Brennstoffverbrauchs auf die Öfen.</p>
+            </div>
+          </div>
+
+          <!-- Gemeinsame Felder -->
+          <div class="field">
+            <span class="field__name" style="display:block; margin-bottom:8px" data-i18n="calc.fCarrier">Energieträger</span>
+            <div class="seg" id="seg-carrier" role="group" aria-label="Energieträger">
+              <button type="button" data-carrier="gas" aria-pressed="true" data-i18n="calc.carrierGas">Erdgas</button>
+              <button type="button" data-carrier="oil" aria-pressed="false" data-i18n="calc.carrierOil">Heizöl</button>
+            </div>
+          </div>
+
+          <div class="field field--num">
+            <label for="in-price">
+              <span class="field__name" data-i18n="calc.fPrice">Ihr Energiepreis</span>
+            </label>
+            <input type="number" id="in-price" min="3" max="30" step="0.1" value="8.0" inputmode="decimal">
+            <span class="unit">ct/kWh</span>
+            <p class="field__hint" data-i18n="calc.fPriceHint">Vorbelegt mit typischen Gewerbepreisen 2025/26 (Destatis/BDEW), netto. Tragen Sie Ihren tatsächlichen Arbeitspreis ein.</p>
+          </div>
+
+          <div class="field">
+            <span class="field__name" style="display:block; margin-bottom:8px" data-i18n="calc.fCompany">Unternehmensgröße <span style="font-weight:400; color:var(--muted)">(für die Förderquote)</span></span>
+            <div class="seg" id="seg-company" role="group" aria-label="Unternehmensgröße">
+              <button type="button" data-company="small" aria-pressed="true" data-i18n="calc.compSmall">Klein &lt; 50 Besch.</button>
+              <button type="button" data-company="medium" aria-pressed="false" data-i18n="calc.compMedium">Mittel &lt; 250</button>
+              <button type="button" data-company="large" aria-pressed="false" data-i18n="calc.compLarge">Groß</button>
+            </div>
+          </div>
+
+          <details class="calc-notes">
+            <summary data-i18n="calc.notesSummary">Annahmen &amp; Grundlagen</summary>
+            <ul>
+              <li data-i18n="calc.note2">Industrie-Modus: Q̇ = V̇ · ρ(T) · cp · ΔT · η, Abkühlung auf 60 °C, Übertrager-Wirkungsgrad 70 %, cp 1,08 kJ/(kg·K). Kondensationsgewinne sind nicht eingerechnet – das Ergebnis ist bewusst konservativ.</li>
+              <li data-i18n="calc.note1">Bäckerei-Modus: Rückgewinnung = 25 % des Ofen-Energieeinsatzes (Herstellergarantie „ein Viertel“).</li>
+              <li data-i18n="calc.note3">Ersetzte Endenergie berücksichtigt 90 % Kesselwirkungsgrad des verdrängten Wärmeerzeugers.</li>
+              <li data-i18n="calc.note4">CO₂-Preis 65 €/t (nationaler Emissionshandel, Korridor 2026: 55–65 €/t). CO₂-Faktoren nach BAFA: Erdgas 0,201, Heizöl 0,266 kg/kWh.</li>
+              <li data-i18n="calc.note5">Investition: 60.000–80.000 € Richtwert für ein Komplettsystem im unteren Leistungsbereich; größere Anlagen werden individuell kalkuliert.</li>
+              <li data-i18n="calc.note6">Voraussetzung ist eine ausreichende Wärmeabnahme im Betrieb (Warmwasser, Heizung, Prozesswärme). Das prüfen wir im Potenzial-Check.</li>
+              <li data-i18n="calc.note7">Förderquoten Stand 2026 (EEW Modul 4: 45/35/25 % nach Unternehmensgröße; Modul 1: 25/20 %, max. 200.000 €). Ohne Gewähr – maßgeblich ist der Bescheid der Bewilligungsstelle. Goldene Regel: Antrag vor Auftrag.</li>
+            </ul>
+          </details>
+        </div>
+
+        <div class="calc__out" aria-live="polite">
+          <p class="tag" data-i18n="calc.outTag">Ergebnis</p>
+          <div class="res-power">
+            <div class="res-num"><span id="out-saving" class="val">–</span><small>€/<span data-i18n="calc.perYear">Jahr</span></small></div>
+            <div class="stat__label" data-i18n="calc.outSavingLabel">Gesamtersparnis pro Jahr (Energie + CO₂)</div>
+          </div>
+          <div class="res-rows">
+            <div class="res-row" id="row-power" hidden>
+              <span data-i18n="calc.rPower">Thermische Leistung</span>
+              <span class="val" id="out-power">–</span>
+            </div>
+            <div class="res-row">
+              <span data-i18n="calc.rHeat">Zurückgewonnene Wärme</span>
+              <span class="val" id="out-heat">–</span>
+            </div>
+            <div class="res-row">
+              <span data-i18n="calc.rEnergy">Ersparnis Energiekosten</span>
+              <span class="val" id="out-energy">–</span>
+            </div>
+            <div class="res-row">
+              <span data-i18n="calc.rCo2">Ersparnis CO₂-Abgabe (<span id="out-co2t">–</span> t CO₂)</span>
+              <span class="val" id="out-co2">–</span>
+            </div>
+            <div class="res-row res-row--sum">
+              <span data-i18n="calc.rPayback">Amortisation ohne Förderung</span>
+              <span class="val" id="out-payback">–</span>
+            </div>
+            <div class="res-row">
+              <span data-i18n="calc.rFunding">Mögliche Förderung</span>
+              <span class="val" id="out-funding">–</span>
+            </div>
+            <div class="res-row">
+              <span data-i18n="calc.rPaybackFunded">Amortisation mit Förderung</span>
+              <span class="val" id="out-payback-funded">–</span>
+            </div>
+          </div>
+          <div class="verdict" id="verdict" data-v="good">
+            <h4 id="verdict-title">–</h4>
+            <p id="verdict-text">–</p>
+          </div>
+          <div class="calc__cta">
+            <button type="button" class="btn btn--heat" id="calc-cta" data-i18n="calc.cta">Ergebnis als Anfrage absenden</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Anfrage ================= -->
+  <section class="section" id="anfrage" style="padding-top: 0">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="tag" data-i18n="pc.f.tag">Die qualifizierte Anfrage</p>
+        <h2 data-i18n="pc.f.h2">Aus Zahlen wird eine Ersteinschätzung.</h2>
+        <p class="lead" data-i18n="pc.f.lead">Ihr Rechnerergebnis wird automatisch in die Nachricht übernommen. Ergänzen Sie PLZ und Kontakt – Sie erhalten binnen weniger Tage eine persönliche Ersteinschätzung vom Ingenieur. Keine Verkaufsmasche, keine Verpflichtung.</p>
+      </div>
+      <form class="check-form" id="check-form" novalidate>
+        <div class="row2">
+          <label>
+            <span data-i18n="form.name">Name *</span>
+            <input class="in-text" type="text" id="ck-name" required autocomplete="name">
+          </label>
+          <label>
+            <span data-i18n="form.company">Firma</span>
+            <input class="in-text" type="text" id="ck-company" autocomplete="organization">
+          </label>
+        </div>
+        <div class="row3">
+          <label>
+            <span data-i18n="form.mail">E-Mail *</span>
+            <input class="in-text" type="email" id="ck-email" required autocomplete="email">
+          </label>
+          <label>
+            <span data-i18n-html="form.phone">Telefon <span class="opt" data-i18n="form.opt">(optional)</span></span>
+            <input class="in-text" type="tel" id="ck-phone" autocomplete="tel">
+          </label>
+          <label>
+            <span data-i18n="form.zip">PLZ des Standorts</span>
+            <input class="in-text" type="text" id="ck-zip" inputmode="numeric" autocomplete="postal-code">
+          </label>
+        </div>
+        <label>
+          <span data-i18n="form.msg">Ihre Nachricht</span>
+          <textarea class="in-area" id="ck-msg" data-i18n-placeholder="pc.f.msgPh" placeholder="Abgasquelle, Rechnerergebnis, geplanter Zeitraum – oder einfach oben im Rechner auf „Ergebnis als Anfrage absenden“ klicken."></textarea>
+        </label>
+        <button class="btn btn--heat" type="submit" data-i18n="form.submit">Anfrage senden</button>
+        <p class="form-note" data-i18n="form.note">Das Formular öffnet Ihr E-Mail-Programm mit fertig ausgefüllter Nachricht – Ihre Daten werden nicht auf einem Server gespeichert.</p>
+        <p class="form-note" data-i18n="form.promise">Sie erhalten binnen weniger Tage eine persönliche Ersteinschätzung vom Ingenieur – keine Verkaufsmasche, keine Verpflichtung.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= Ablauf danach ================= -->
+  <section class="section section--dark" id="danach">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="tag" data-i18n="pc.n.tag">Und dann?</p>
+        <h2 data-i18n="pc.n.h2">So geht es nach Ihrer Anfrage weiter.</h2>
+      </div>
+      <div class="steps" style="background: var(--line-dark); border-color: var(--line-dark)">
+        <div class="step" style="background: var(--coal)">
+          <h3 style="color: #fff" data-i18n="pc.n.s1h">Ersteinschätzung</h3>
+          <p style="color: rgba(255,255,255,.72)" data-i18n="pc.n.s1p">Binnen weniger Tage prüfen wir Ihre Eckdaten und sagen Ihnen ehrlich, ob sich der nächste Schritt lohnt – auch, wenn die Antwort Nein ist.</p>
+        </div>
+        <div class="step" style="background: var(--coal)">
+          <h3 style="color: #fff" data-i18n="pc.n.s2h">Check vor Ort</h3>
+          <p style="color: rgba(255,255,255,.72)" data-i18n="pc.n.s2p">Wir messen Temperaturen und Volumenströme an Ihrer Anlage und erfassen die Wärmeabnehmer im Betrieb – die Basis der Energiebilanz.</p>
+        </div>
+        <div class="step" style="background: var(--coal)">
+          <h3 style="color: #fff" data-i18n="pc.n.s3h">Angebot &amp; Förderfahrplan</h3>
+          <p style="color: rgba(255,255,255,.72)" data-i18n="pc.n.s3p">Sie erhalten Auslegung, Preis und Amortisationsrechnung – plus den Fahrplan für den Förderantrag, abgestimmt mit Ihrem Energieberater.</p>
+        </div>
+        <div class="step" style="background: var(--coal)">
+          <h3 style="color: #fff" data-i18n="pc.n.s4h">Bau &amp; Inbetriebnahme</h3>
+          <p style="color: rgba(255,255,255,.72)" data-i18n="pc.n.s4p">Anlagenbau, Kaminanbindung, Einbindung in Heizung und Warmwasser, Einweisung – aus einer Hand, bei laufendem Betrieb.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= Footer ================= -->
+<footer class="site-foot">
+  <div class="wrap">
+    <span data-i18n="foot.legal">© 2026 · RETHERM ist ein Produkt der Ganzenmüller GmbH – für Backöfen gemeinsam angeboten mit der Werner &amp; Pfleiderer Lebensmitteltechnik GmbH.</span>
+    <nav aria-label="Rechtliches">
+      <a href="impressum.html" data-i18n="foot.imprint">Impressum</a>
+      <a href="datenschutz.html" data-i18n="foot.privacy">Datenschutz</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/js/calc-core.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/i18n/check.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

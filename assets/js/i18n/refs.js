@@ -1,0 +1,58 @@
+/* RETHERM – Übersetzungen Referenzen (erweitert I18N.en) */
+
+'use strict';
+
+Object.assign(I18N.en, {
+  'refs.title': 'References: more than 100 systems | RETHERM',
+  'refs.desc': 'More than 100 heat recovery systems built across a wide range of industries and sizes – from the kilowatt to the megawatt range. TÜV Süd certified, maintenance from the same company. Selected case studies with key figures are in preparation.',
+  'refs.h1': 'More than 100 systems built: <em>experience you can check.</em>',
+  'refs.lead': 'A wide range of industries, sizes from the kilowatt to the megawatt range, mostly in Germany and occasionally abroad – for decades. Every system TÜV Süd certified, every service visit from the same company. In the bakery segment together with WP Bakery Technologies.',
+
+  'refs.a.tag': '01 — Why breadth matters',
+  'refs.a.h2': 'One documented project beats any advert.',
+  'refs.a.p1': 'In capital goods, no brochure convinces – proof does: is such a system already running, under conditions similar to your own? That is the question a references page has to answer.',
+  'refs.a.p2': 'That is why breadth counts for us. More than 100 systems across many different industries and sizes show that we handle very different flue gas situations: dusty furnace exhaust, batch-fired baking ovens, continuously running engines. If you recognise your own situation here, you carry less risk.',
+  'refs.a.p3': 'And we do not disappear after commissioning: maintenance and service come from the same company that sized and built the system. That, too, is part of a reference – the operator still has the same contact years later.',
+  'refs.a.l1': 'heat recovery systems built – TÜV Süd certified, mostly in Germany, occasionally abroad.',
+  'refs.a.l2': 'sizes from small businesses to industrial plants – the technology scales with you.',
+  'refs.a.l3v': 'since 1980',
+  'refs.a.l3': 'family-run master business in Erbach an der Donau – from special chimney construction to complete systems.',
+
+  'refs.g.tag': '02 — Selected projects',
+  'refs.g.h2': 'Four situations we build again and again.',
+  'refs.g.lead': 'We are currently preparing selected projects as case studies with key figures – you can already see the structure now.',
+  'refs.g.ph': 'Project photo to follow',
+  'refs.g.c1h': 'Bakery · Southern Germany',
+  'refs.g.c1p': 'Several baking ovens, batch-fired baking, hot water needed all year round for production and cleaning: the typical bakery situation. In the bakery segment we deliver together with WP Bakery Technologies.',
+  'refs.g.c2h': 'Metal processing',
+  'refs.g.c2p': 'Hot, often dusty furnace exhaust in multi-shift operation – the case the self-cleaning smooth-tube heat exchanger is built for. The heat goes into hall heating and processes.',
+  'refs.g.c3h': 'Food production',
+  'refs.g.c3p': 'Boiler and process exhaust meets continuous heat demand: cleaning, hot water, space heating. Recovery and demand are rarely this close together.',
+  'refs.g.c4h': 'CHP retrofit',
+  'refs.g.c4p': 'A combined heat and power unit runs many thousands of hours a year – good conditions for a retrofit. It is tied into the existing flue run with a bypass; engine operation remains untouched.',
+  'refs.g.fPower': 'Output',
+  'refs.g.fEnergy': 'Energy recovered',
+  'refs.g.fCo2': 'CO₂ saving',
+  'refs.g.fPayback': 'Payback',
+  'refs.g.tbd': 'to follow',
+
+  'refs.f.tag': '03 — The yardstick',
+  'refs.f.h2': 'Numbers sell. Claims do not.',
+  'refs.f.lead': 'How to spot a useful case study – from us as from any other supplier: four key figures, not adjectives. These are exactly the values we are compiling for the projects above.',
+  'refs.f.c1h': 'Output and annual energy',
+  'refs.f.c1p': 'Transferred output in kilowatts or megawatts – and the megawatt hours recovered per year. Only the annual figure shows what a system really delivers, because it contains the operating hours.',
+  'refs.f.c2h': 'Cost and CO₂ savings',
+  'refs.f.c2p': 'Recovered heat replaces purchased fuel. That belongs in figures – in euros per year and in tonnes of CO₂. Two numbers that management and energy managers can work with.',
+  'refs.f.c3h': 'Payback period',
+  'refs.f.c3p': 'The figure every investment is measured against: when has the system paid for itself? Honestly calculated with real operating hours and including maintenance – not with datasheet optimism.',
+
+  'refs.c.tag': 'The next step',
+  'refs.c.h2': 'The next system could be yours.',
+  'refs.c.p': 'Whether your flue gas situation fits this line-up is what the potential check shows: flue gas temperature, volume flow, operating hours – the first calculation needs nothing more. On request you receive a personal first assessment within a few days.',
+  'refs.c.cta1': 'Start the potential check',
+  'refs.c.cta2': 'Enquire directly',
+  'refs.c.dPhone': 'Phone',
+  'refs.c.dMail': 'E-mail',
+  'refs.c.dNext': 'Also relevant',
+  'refs.c.dNextLink': 'The company behind the systems →',
+});
