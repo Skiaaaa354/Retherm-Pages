@@ -199,10 +199,11 @@
       </div>
 
       <figure class="schema-frame rv">
-        <svg viewBox="0 0 960 430" role="img" aria-labelledby="schema-title">
+        <svg viewBox="0 0 960 520" role="img" aria-labelledby="schema-title">
           <title id="schema-title" data-i18n="home.prin.schemaTitle">Anlagenschema der RETHERM Wärmerückgewinnung</title>
           <style>
             .s-box { fill: none; stroke: #1d2126; stroke-width: 2; }
+            .s-hatch { fill: none; stroke: #6b7178; stroke-width: 1; opacity: .55; }
             .s-hot { fill: none; stroke: #e8501e; stroke-width: 2.5; }
             .s-cool { fill: none; stroke: #4a6577; stroke-width: 2.5; }
             .s-water { fill: none; stroke: #4a6577; stroke-width: 2; stroke-dasharray: 7 5; }
@@ -215,73 +216,75 @@
             .s-coil { fill: none; stroke: #e8501e; stroke-width: 2; }
           </style>
 
-          <!-- Abgasquellen -->
-          <g>
-            <rect class="s-box" x="30" y="150" width="72" height="86"/>
-            <rect class="s-box" x="118" y="150" width="72" height="86"/>
-            <rect class="s-box" x="206" y="150" width="72" height="86"/>
-            <path class="s-flame" d="M62 214 q-8 -12 2 -22 q-1 8 6 10 q5 -7 3 -15 q13 9 7 24 q-5 9 -18 3z"/>
-            <path class="s-flame" d="M150 214 q-8 -12 2 -22 q-1 8 6 10 q5 -7 3 -15 q13 9 7 24 q-5 9 -18 3z"/>
-            <path class="s-flame" d="M238 214 q-8 -12 2 -22 q-1 8 6 10 q5 -7 3 -15 q13 9 7 24 q-5 9 -18 3z"/>
-            <text class="s-label" x="30" y="268" data-i18n="home.prin.sSources">ABGASQUELLEN</text>
-            <text class="s-label-sub" x="30" y="284" data-i18n="home.prin.sSourcesSub">OFEN · KESSEL · BHKW · TROCKNER</text>
-          </g>
+          <!-- Decke mit Schraffur (Durchbruch für den Kamin) -->
+          <path class="s-box" d="M40 48 H785 M815 48 H920"/>
+          <path class="s-hatch" d="M60 48 l14 -14 M96 48 l14 -14 M132 48 l14 -14 M168 48 l14 -14 M204 48 l14 -14 M240 48 l14 -14 M276 48 l14 -14 M312 48 l14 -14 M348 48 l14 -14 M384 48 l14 -14 M420 48 l14 -14 M456 48 l14 -14 M492 48 l14 -14 M528 48 l14 -14 M564 48 l14 -14 M600 48 l14 -14 M636 48 l14 -14 M672 48 l14 -14 M708 48 l14 -14 M744 48 l14 -14 M830 48 l14 -14 M866 48 l14 -14 M896 48 l14 -14"/>
+          <text class="s-label-sub" x="40" y="30" data-i18n="home.prin.sCeil">DECKE</text>
 
-          <!-- Abgas-Sammelleitung -->
-          <path class="s-hot" d="M66 150 V110 H430"/>
-          <path class="s-hot" d="M154 150 V110"/>
-          <path class="s-hot" d="M242 150 V110"/>
-          <path class="s-flow-hot" d="M66 150 V110 H430" aria-hidden="true"/>
-          <path class="s-hot" d="M418 104 l14 6 l-14 6"/>
-          <text class="s-label" x="66" y="92" data-i18n="home.prin.sFlue">HEISSES ABGAS</text>
-          <text class="s-temp-hot" x="330" y="130">≈ 250 °C</text>
+          <!-- Abhängung der Einheit -->
+          <path class="s-box" d="M430 48 V150 M650 48 V150" stroke-width="1.5"/>
+          <text class="s-label" x="80" y="100" data-i18n="home.prin.sMount1">MONTAGE OHNE STELLFLÄCHE</text>
+          <text class="s-label-sub" x="80" y="118" data-i18n="home.prin.sMount2">DECKE · ÜBER DER ANLAGE · TECHNIKEBENE</text>
 
-          <!-- RETHERM Einheit -->
-          <g>
-            <rect class="s-box" x="430" y="62" width="200" height="140"/>
-            <path class="s-coil" d="M450 90 h160 m0 22 h-160 m0 22 h160 m0 22 h-160"/>
-            <path class="s-coil" d="M610 90 a11 11 0 0 1 0 22 m-160 0 a11 11 0 0 0 0 22 m160 0 a11 11 0 0 1 0 22"/>
-            <text class="s-label" x="430" y="232">RETHERM</text>
-            <text class="s-label-sub" x="430" y="248" data-i18n="home.prin.sUnit">ABGASWÄRMETAUSCHER + SAUGZUG</text>
-          </g>
+          <!-- RETHERM-Einheit über der Anlage -->
+          <rect class="s-box" x="380" y="150" width="380" height="65"/>
+          <text class="s-label" x="398" y="178">RETHERM</text>
+          <text class="s-label-sub" x="398" y="196" data-i18n="home.prin.sUnit">WÄRMETAUSCHER · SAUGZUG · BYPASSKLAPPE</text>
+          <path class="s-coil" d="M665 163 v40 m20 -40 v40 m20 -40 v40 m20 -40 v40"/>
+
+          <!-- Bypass: von der Einheit direkt in den Kamin -->
+          <path class="s-bypass" d="M740 150 V110 H800"/>
+          <text class="s-label-sub" x="746" y="100">BYPASS</text>
 
           <!-- Gekühltes Abgas zum Kamin -->
-          <path class="s-cool" d="M630 110 H760 V40"/>
-          <path class="s-cool" d="M754 52 l6 -14 l6 14"/>
-          <rect class="s-box" x="744" y="18" width="32" height="10"/>
-          <text class="s-label" x="792" y="36" data-i18n="home.prin.sStack">KAMIN</text>
-          <text class="s-temp-cool" x="792" y="52">≈ 60 °C</text>
+          <path class="s-cool" d="M760 180 H800 V20"/>
+          <path class="s-cool" d="M794 34 l6 -14 l6 14"/>
+          <text class="s-label" x="822" y="70" data-i18n="home.prin.sStack">KAMIN</text>
+          <text class="s-temp-cool" x="822" y="94">≈ 60 °C</text>
 
-          <!-- Bypass -->
-          <path class="s-bypass" d="M340 110 V36 H760"/>
-          <text class="s-label-sub" x="352" y="30">BYPASS</text>
+          <!-- Heiße Sammelleitung von den Quellen zur Einheit -->
+          <path class="s-hot" d="M135 330 V250 H460 V215"/>
+          <path class="s-hot" d="M265 330 V250 M395 330 V250"/>
+          <path class="s-flow-hot" d="M135 330 V250 H460 V215" aria-hidden="true"/>
+          <path class="s-hot" d="M454 229 l6 -12 l6 12"/>
+          <text class="s-label" x="135" y="238" data-i18n="home.prin.sFlue">HEISSES ABGAS</text>
+          <text class="s-temp-hot" x="248" y="238">≈ 250 °C</text>
 
-          <!-- Wasserkreis zum Speicher -->
-          <path class="s-water" d="M530 202 V300 H610"/>
-          <path class="s-flow-water" d="M530 202 V300 H610" aria-hidden="true"/>
-          <path class="s-water" d="M598 294 l12 6 l-12 6"/>
-          <text class="s-temp-cool" x="544" y="262" data-i18n="home.prin.sFlow">VORLAUF ≈ 70 °C</text>
+          <!-- Abgasquellen auf dem Boden -->
+          <rect class="s-box" x="80" y="330" width="110" height="120"/>
+          <rect class="s-box" x="210" y="330" width="110" height="120"/>
+          <rect class="s-box" x="340" y="330" width="110" height="120"/>
+          <path class="s-flame" d="M127 414 q-8 -12 2 -22 q-1 8 6 10 q5 -7 3 -15 q13 9 7 24 q-5 9 -18 3z"/>
+          <path class="s-flame" d="M257 414 q-8 -12 2 -22 q-1 8 6 10 q5 -7 3 -15 q13 9 7 24 q-5 9 -18 3z"/>
+          <path class="s-flame" d="M387 414 q-8 -12 2 -22 q-1 8 6 10 q5 -7 3 -15 q13 9 7 24 q-5 9 -18 3z"/>
+
+          <!-- Boden -->
+          <path class="s-box" d="M40 450 H920"/>
+          <text class="s-label" x="80" y="478" data-i18n="home.prin.sSources">ABGASQUELLEN</text>
+          <text class="s-label-sub" x="215" y="478" data-i18n="home.prin.sSourcesSub">OFEN · KESSEL · BHKW · TROCKNER</text>
+
+          <!-- Wasserkreis zum Pufferspeicher -->
+          <path class="s-water" d="M560 215 V330"/>
+          <path class="s-flow-water" d="M560 215 V330" aria-hidden="true"/>
+          <path class="s-water" d="M554 318 l6 12 l6 -12"/>
+          <text class="s-temp-cool" x="576" y="282" data-i18n="home.prin.sFlow">VORLAUF ≈ 70 °C</text>
 
           <!-- Pufferspeicher -->
-          <g>
-            <rect class="s-box" x="610" y="252" width="90" height="120" rx="14"/>
-            <path class="s-box" d="M610 282 h90 M610 342 h90" stroke-width="1"/>
-            <text class="s-label" x="610" y="396" data-i18n="home.prin.sBuffer">PUFFERSPEICHER</text>
-          </g>
+          <rect class="s-box" x="520" y="330" width="80" height="120" rx="12"/>
+          <path class="s-box" d="M520 362 h80 M520 420 h80" stroke-width="1"/>
+          <text class="s-label" x="505" y="478" data-i18n="home.prin.sBuffer">PUFFERSPEICHER</text>
 
-          <!-- Abnehmer -->
-          <path class="s-water" d="M700 312 H820"/>
-          <path class="s-flow-water" d="M700 312 H820" aria-hidden="true"/>
-          <path class="s-water" d="M808 306 l12 6 l-12 6"/>
-          <g>
-            <rect class="s-box" x="826" y="256" width="110" height="112"/>
-            <text class="s-label" x="840" y="286" data-i18n="home.prin.sUse1">HEIZUNG</text>
-            <text class="s-label" x="840" y="308" data-i18n="home.prin.sUse2">WARMWASSER</text>
-            <text class="s-label" x="840" y="330" data-i18n="home.prin.sUse3">PROZESS-</text>
-            <text class="s-label" x="840" y="352" data-i18n="home.prin.sUse4">WÄRME</text>
-          </g>
+          <!-- Verteilung an die Verbraucher -->
+          <path class="s-water" d="M600 390 H830"/>
+          <path class="s-flow-water" d="M600 390 H830" aria-hidden="true"/>
+          <path class="s-water" d="M818 384 l12 6 l-12 6"/>
+          <text class="s-label-sub" x="830" y="318" data-i18n="home.prin.sUsers">WÄRMEVERBRAUCHER</text>
+          <rect class="s-box" x="830" y="330" width="114" height="120"/>
+          <text class="s-label" x="840" y="368" data-i18n="home.prin.sUse1">HEIZUNG</text>
+          <text class="s-label" x="840" y="394" data-i18n="home.prin.sUse2">WARMWASSER</text>
+          <text class="s-label" x="840" y="420" data-i18n="home.prin.sUse3">PROZESSWÄRME</text>
         </svg>
-        <figcaption data-i18n="home.prin.caption">Vereinfachtes Anlagenschema: Das heiße Abgas einer oder mehrerer Quellen wird gesammelt, im Abgaswärmetauscher an den Wasserkreis übertragen und über den Pufferspeicher im Betrieb verteilt. Der Bypass sichert den Produktionsbetrieb jederzeit.</figcaption>
+        <figcaption data-i18n="home.prin.caption">Vereinfachtes Anlagenschema: Die RETHERM-Einheit hängt über der Anlage – an der Decke abgehängt, direkt auf den Öfen oder auf einer Technikebene. Kein Bodenstellplatz. Das heiße Abgas wird gesammelt, im Abgaswärmetauscher an den Wasserkreis übertragen und über den Pufferspeicher verteilt; der Bypass führt jederzeit direkt zum Kamin.</figcaption>
       </figure>
 
       <div class="schema-legend" aria-hidden="true">
@@ -297,7 +300,7 @@
         </figure>
         <div>
           <h3 style="font-size: clamp(26px, 3vw, 36px)" data-i18n="home.unit.h3">Das ist RETHERM.</h3>
-          <p data-i18n="home.unit.p1">Die komplette Rückgewinnung in einem Gehäuse: Abgaswärmetauscher, Saugzug und Bypassklappe. Montiert über Ihrer Anlage oder unter der Decke – ohne Stellfläche, ohne Umbau Ihrer Produktion.</p>
+          <p data-i18n="home.unit.p1">Die komplette Rückgewinnung in einem Gehäuse: Abgaswärmetauscher, Saugzug und Bypassklappe. Montiert ohne Bodenstellplatz – an der Decke abgehängt, direkt über der Anlage oder auf einer zweiten Technikebene. Ihre Produktionsfläche bleibt frei.</p>
           <p data-i18n="home.unit.p2">Und wenn Wartung ansteht, eine Störung auftritt oder der Pufferspeicher schlicht voll ist? Dann öffnet der Bypass, und das Abgas nimmt den direkten Weg zum Kamin. Ihre Produktion merkt davon nichts – sie hat immer Vorrang.</p>
         </div>
       </div>
@@ -351,7 +354,7 @@
         <article class="comp">
           <span class="comp__no">L·05</span>
           <h3 data-i18n="home.svc.c5h">Inbetriebnahme</h3>
-          <p data-i18n="home.svc.c5p">Montage über oder neben der Anlage, Einbindung in Heizungs- und Warmwasserinstallation, Einweisung Ihres Teams – bei laufendem Betrieb.</p>
+          <p data-i18n="home.svc.c5p">Montage an der Decke, über der Anlage oder auf der Technikebene – ohne Stellfläche. Einbindung in Heizung und Warmwasser, Einweisung Ihres Teams, bei laufendem Betrieb.</p>
         </article>
         <article class="comp">
           <span class="comp__no">L·06</span>
@@ -443,6 +446,10 @@
         <details>
           <summary data-i18n="home.faq.q6">Wie schnell amortisiert sich die Investition?</summary>
           <p data-i18n="home.faq.a6">Das hängt von Temperatur, Volumenstrom, Betriebsstunden und Ihrem Energiepreis ab. Typisch sind wenige Jahre, mit Förderung entsprechend weniger – und steigende CO₂-Preise verkürzen die Rechnung Jahr für Jahr. Der Potenzial-Check nennt Ihnen eine ehrliche Spanne und sagt auch, wenn es sich nicht lohnt.</p>
+        </details>
+        <details>
+          <summary data-i18n="home.faq.q7">Wie viel Platz braucht die Anlage?</summary>
+          <p data-i18n="home.faq.a7">Keinen Bodenstellplatz. Die RETHERM-Einheit wird an der Decke abgehängt, direkt über der Anlage montiert oder auf einer zweiten Technikebene installiert – Ihre Produktionsfläche bleibt frei. Nur der Pufferspeicher braucht einen Stellplatz, üblicherweise im Heizraum.</p>
         </details>
       </div>
     </div>
@@ -547,6 +554,11 @@
       "@type": "Question",
       "name": "Wie schnell amortisiert sich eine Abwärmenutzung?",
       "acceptedAnswer": { "@type": "Answer", "text": "Das hängt von Temperatur, Volumenstrom, Betriebsstunden und Energiepreis ab. Typisch sind wenige Jahre, mit Förderung entsprechend weniger – und steigende CO₂-Preise verkürzen die Rechnung Jahr für Jahr." }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie viel Platz braucht eine Wärmerückgewinnungsanlage?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Keinen Bodenstellplatz. Die RETHERM-Einheit wird an der Decke abgehängt, direkt über der Anlage montiert oder auf einer zweiten Technikebene installiert – die Produktionsfläche bleibt frei. Nur der Pufferspeicher braucht einen Stellplatz, üblicherweise im Heizraum." }
     }
   ]
 }
