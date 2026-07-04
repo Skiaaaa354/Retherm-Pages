@@ -58,4 +58,7 @@ Object.assign(I18N.en, {
   'back.c.dMail': 'E-mail',
   'back.c.dNext': 'Also relevant',
   'back.c.dNextLink': 'Funding for waste-heat projects →',
+
+  'back.ph.a1': 'RETHERM heat recovery above a line of three ROTOTHERM rack ovens with central controls',
+  'back.ph.c1': 'The complete system: RETHERM unit above a ROTOTHERM oven line – collecting duct, smooth-tube heat exchanger, chimney tie-in and controls.',
 });

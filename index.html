@@ -49,11 +49,22 @@
   <!-- ================= Hero ================= -->
   <section class="hero">
     <svg class="hero__flow" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-      <path d="M860 700 C 855 560, 875 470, 862 340 C 852 240, 870 130, 861 0"/>
-      <path d="M960 700 C 968 570, 950 460, 963 330 C 972 230, 955 120, 964 0"/>
-      <path d="M1060 700 C 1054 580, 1072 480, 1060 350 C 1050 250, 1068 140, 1059 0"/>
-      <path d="M1145 700 C 1150 560, 1136 450, 1147 320 C 1155 220, 1140 110, 1148 0"/>
-      <path d="M760 700 C 754 590, 770 480, 758 360 C 748 260, 766 150, 757 0"/>
+      <g class="flow-up">
+        <path d="M720 700 C 714 590, 730 480, 718 360 C 708 260, 726 150, 717 0"/>
+        <path d="M800 700 C 806 580, 790 470, 802 340 C 811 240, 794 130, 803 0"/>
+        <path d="M872 700 C 866 560, 884 460, 871 330 C 861 230, 879 120, 870 0"/>
+        <path d="M950 700 C 957 585, 941 475, 953 345 C 962 245, 945 135, 954 0"/>
+        <path d="M1032 700 C 1026 575, 1044 465, 1031 335 C 1021 235, 1039 125, 1030 0"/>
+        <path d="M1104 700 C 1110 565, 1094 455, 1106 325 C 1115 225, 1098 115, 1107 0"/>
+        <path d="M1164 700 C 1158 590, 1174 480, 1162 350 C 1152 250, 1170 140, 1161 0"/>
+      </g>
+      <g class="flow-down">
+        <path d="M42 0 C 48 120, 32 230, 44 360 C 53 460, 36 570, 45 700"/>
+        <path d="M118 0 C 112 110, 128 220, 116 350 C 106 450, 124 560, 115 700"/>
+        <path d="M196 0 C 202 125, 186 235, 198 365 C 207 465, 190 575, 199 700"/>
+        <path d="M272 0 C 266 115, 282 225, 270 355 C 260 455, 278 565, 269 700"/>
+        <path d="M344 0 C 350 130, 334 240, 346 370 C 355 470, 338 580, 347 700"/>
+      </g>
     </svg>
     <div class="wrap hero__inner">
       <p class="tag tag--heat" data-i18n="home.heroTag">Wärmerückgewinnung aus Abgas · Komplettanlagen</p>
@@ -277,6 +288,21 @@
         <span class="l-heat"><i></i><span data-i18n="home.prin.leg1">Abgas heiß</span></span>
         <span class="l-cool"><i></i><span data-i18n="home.prin.leg2">Abgas gekühlt</span></span>
         <span class="l-water"><i></i><span data-i18n="home.prin.leg3">Wasserkreis</span></span>
+      </div>
+
+      <div class="photo-strip rv">
+        <figure>
+          <img src="assets/img/retherm-ofenlinie.jpg" alt="RETHERM-Wärmerückgewinnung über einer Linie aus drei ROTOTHERM-Stikkenöfen" data-i18n-alt="home.ph.a1" loading="lazy">
+          <figcaption data-i18n="home.ph.c1">So sieht es gebaut aus: RETHERM über einer ROTOTHERM-Ofenlinie.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/retherm-steuerung.jpg" alt="Siemens-Touchdisplay der RETHERM-Steuerung mit Abgaswerten" data-i18n-alt="home.ph.a2" loading="lazy" style="object-position: center 20%">
+          <figcaption data-i18n="home.ph.c2">Live am Display: Abgas 278 °C rein, 121 °C raus.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/referenz-backstube.jpg" alt="Backstube mit Ofenanlage und Edelstahl-Abgasleitungen unter der Decke" data-i18n-alt="home.ph.a3" loading="lazy">
+          <figcaption data-i18n="home.ph.c3">Eingebaut im laufenden Betrieb einer Backstube.</figcaption>
+        </figure>
       </div>
     </div>
   </section>

@@ -68,6 +68,13 @@ Object.assign(I18N.en, {
   'home.prin.leg2': 'Flue gas, cooled',
   'home.prin.leg3': 'Water circuit',
 
+  'home.ph.a1': 'RETHERM heat recovery above a line of three ROTOTHERM rack ovens',
+  'home.ph.c1': 'This is what it looks like built: RETHERM above a ROTOTHERM oven line.',
+  'home.ph.a2': 'Siemens touch display of the RETHERM controls showing flue gas readings',
+  'home.ph.c2': 'Live on the display: flue gas in at 278 °C, out at 121 °C.',
+  'home.ph.a3': 'Bakery with oven line and stainless steel flue ducts under the ceiling',
+  'home.ph.c3': 'Installed in a bakery, in the middle of day-to-day production.',
+
   'home.svc.tag': '04 — Depth of service',
   'home.svc.h2': 'The complete solution. Not the component.',
   'home.svc.lead': 'There are plenty of heat exchanger manufacturers. What is rare is a partner who delivers the finished energy source: from the energy balance to commissioning, everything except electrical and plumbing – from a single source.',

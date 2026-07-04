@@ -55,4 +55,6 @@ Object.assign(I18N.en, {
   'refs.c.dMail': 'E-mail',
   'refs.c.dNext': 'Also relevant',
   'refs.c.dNextLink': 'The company behind the systems →',
+
+  'refs.g.a1': 'Bakery with oven line and stainless steel flue ducts under the ceiling',
 });

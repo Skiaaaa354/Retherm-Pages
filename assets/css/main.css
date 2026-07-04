@@ -704,18 +704,27 @@ input[type="range"]::-moz-range-thumb {
 
 .res-row--sum .val { color: var(--heat); font-size: 18px; }
 
-/* Urteil */
+/* Urteil – Statusanzeige im HMI-Stil (LED-Quadrat statt Farbkante) */
 .verdict {
   margin-top: auto;
   border: 1px solid var(--line-dark);
-  border-left: 4px solid var(--muted);
   padding: 18px 20px;
 }
 
-.verdict[data-v="strong"] { border-left-color: var(--ok-strong); }
-.verdict[data-v="good"]   { border-left-color: var(--ok); }
-.verdict[data-v="maybe"]  { border-left-color: var(--mid); }
-.verdict[data-v="weak"]   { border-left-color: var(--bad); }
+.verdict h4::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 11px;
+  background: var(--muted);
+  vertical-align: 1px;
+}
+
+.verdict[data-v="strong"] h4::before { background: var(--ok-strong); box-shadow: 0 0 9px var(--ok-strong); }
+.verdict[data-v="good"]   h4::before { background: var(--ok); box-shadow: 0 0 9px var(--ok); }
+.verdict[data-v="maybe"]  h4::before { background: var(--mid); box-shadow: 0 0 9px var(--mid); }
+.verdict[data-v="weak"]   h4::before { background: var(--bad); box-shadow: 0 0 9px var(--bad); }
 
 .verdict h4 {
   font-family: var(--font-head);
@@ -1238,29 +1247,98 @@ a.src-card:hover .src-more { color: var(--heat); }
 
 .rv.is-in { opacity: 1; transform: none; }
 
-/* Aufsteigende Wärmeströme im Hero */
-.hero__flow {
+/* Dynamischer Hintergrund: Kaminglut steigt rechts, Wasser fällt links.
+   Nahtlose Loops: dashoffset-Delta = Vielfaches der Dash-Periode
+   (Glut 6+120=126 → −252; Wasser 5+108=113 → +226). */
+.hero__flow, .page-head__flow {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: .5;
 }
 
-.hero__flow path {
+.hero__flow { opacity: .9; }
+
+.page-head__flow { opacity: .45; }
+
+.hero__inner, .page-head__inner { position: relative; }
+
+.hero__flow path, .page-head__flow path {
   fill: none;
-  stroke: var(--heat);
-  stroke-width: 1.5;
-  stroke-dasharray: 3 130;
   stroke-linecap: round;
-  animation: flow-up 9s linear infinite;
 }
 
-.hero__flow path:nth-child(2) { animation-delay: -3s; stroke-dasharray: 3 170; opacity: .8; }
-.hero__flow path:nth-child(3) { animation-delay: -6s; stroke-dasharray: 3 110; opacity: .6; }
-.hero__flow path:nth-child(4) { animation-delay: -1.5s; stroke-dasharray: 3 150; opacity: .7; }
-.hero__flow path:nth-child(5) { animation-delay: -4.5s; stroke-dasharray: 3 120; opacity: .5; }
+.flow-up { filter: drop-shadow(0 0 7px rgba(232, 80, 30, .65)); }
 
-@keyframes flow-up { to { stroke-dashoffset: -266; } }
+.flow-up path {
+  stroke: var(--heat);
+  stroke-width: 2.5;
+  stroke-dasharray: 6 120;
+  animation: flow-up 7s linear infinite;
+}
+
+.flow-up path:nth-child(2) { animation-duration: 9s;   animation-delay: -3.2s; stroke-width: 2;   opacity: .85; }
+.flow-up path:nth-child(3) { animation-duration: 6s;   animation-delay: -1.4s; stroke-width: 3;   opacity: .95; }
+.flow-up path:nth-child(4) { animation-duration: 11s;  animation-delay: -6.5s; stroke-width: 1.6; opacity: .6; }
+.flow-up path:nth-child(5) { animation-duration: 7.6s; animation-delay: -4.8s; stroke-width: 2.2; opacity: .8; }
+.flow-up path:nth-child(6) { animation-duration: 9.8s; animation-delay: -2.1s; stroke-width: 1.8; opacity: .65; }
+.flow-up path:nth-child(7) { animation-duration: 6.8s; animation-delay: -5.6s; stroke-width: 2.6; opacity: .9; }
+
+.flow-down { filter: drop-shadow(0 0 5px rgba(125, 162, 184, .5)); }
+
+.flow-down path {
+  stroke: #7da2b8;
+  stroke-width: 2;
+  stroke-dasharray: 5 108;
+  animation: flow-down 8.4s linear infinite;
+  opacity: .6;
+}
+
+.flow-down path:nth-child(2) { animation-duration: 10.6s; animation-delay: -4.1s; stroke-width: 1.6; opacity: .45; }
+.flow-down path:nth-child(3) { animation-duration: 7.2s;  animation-delay: -2.6s; stroke-width: 2.4; opacity: .7; }
+.flow-down path:nth-child(4) { animation-duration: 12s;   animation-delay: -7.3s; stroke-width: 1.4; opacity: .38; }
+.flow-down path:nth-child(5) { animation-duration: 9s;    animation-delay: -5.2s; stroke-width: 1.8; opacity: .5; }
+
+@keyframes flow-up { to { stroke-dashoffset: -252; } }
+
+@keyframes flow-down { to { stroke-dashoffset: 226; } }
+
+/* Foto-Leiste (Praxisbilder in Haarlinien-Rahmen) */
+.photo-strip {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.05fr) minmax(0, 1.05fr);
+  gap: clamp(14px, 2vw, 24px);
+  margin-top: clamp(28px, 4vw, 44px);
+}
+
+.photo-strip figure {
+  margin: 0;
+  border: 1px solid var(--line);
+  background: var(--paper-raised);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-strip img {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  flex: 1;
+}
+
+.photo-strip figcaption {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+  padding: 9px 6px 4px;
+}
+
+@media (max-width: 760px) {
+  .photo-strip { grid-template-columns: 1fr; }
+}
 
 /* Fließende Medien im Anlagenschema */
 .s-flow-hot, .s-flow-water {

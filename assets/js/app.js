@@ -38,7 +38,7 @@
       applyText(node, lang === 'en' ? I18N.en[key] : germanCache.get(key));
     });
 
-    [['data-i18n-content', 'content'], ['data-i18n-placeholder', 'placeholder'], ['data-i18n-aria', 'aria-label']].forEach(([attr, target]) => {
+    [['data-i18n-content', 'content'], ['data-i18n-placeholder', 'placeholder'], ['data-i18n-aria', 'aria-label'], ['data-i18n-alt', 'alt']].forEach(([attr, target]) => {
       document.querySelectorAll('[' + attr + ']').forEach((node) => {
         const key = node.getAttribute(attr);
         const cacheKey = 'attr:' + target + ':' + key;

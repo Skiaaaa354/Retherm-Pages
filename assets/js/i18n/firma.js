@@ -59,4 +59,7 @@ Object.assign(I18N.en, {
   'firma.c.dPhone': 'Phone',
   'firma.c.dMail': 'E-mail',
   'firma.c.dContact': 'Your contact',
+
+  'firma.ph.a1': 'Ganzenmüller control cabinet with test sticker on a RETHERM system',
+  'firma.ph.c1': 'From our own workshop: Ganzenmüller control cabinet, tested and documented before delivery.',
 });
