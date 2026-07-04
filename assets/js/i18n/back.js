@@ -23,9 +23,9 @@ Object.assign(I18N.en, {
   'back.u.h2': 'Flue gas and vapour. One system.',
   'back.u.lead': 'Separate systems for flue gas and vapour cost twice – to buy and to run. RETHERM combines both, and is built so that your baking never depends on the heat recovery.',
   'back.u.c1h': 'One exchanger for both',
-  'back.u.c1p': 'Flue gas and vapour are brought together and treated in one system – cheaper than two separate ones. The smooth-tube heat exchanger transfers the heat indirectly to water and also recovers the condensation heat of the water vapour.',
+  'back.u.c1p': 'Flue gas and vapour are brought together and treated in one system – cheaper than two separate ones. The flue gas heat exchanger transfers the heat indirectly to water and also recovers the condensation heat of the water vapour.',
   'back.u.c2h': 'Self-cleaning as standard',
-  'back.u.c2p': 'Smooth tubes forgive deposits, and the self-cleaning function keeps the exchanger clear. Servicing once a year, maintenance without stopping production – tested and certified by TÜV Süd.',
+  'back.u.c2p': 'Smooth tubes that little sticks to forgive deposits, and the self-cleaning function keeps the exchanger clear. Servicing once a year, maintenance without stopping production – tested and certified by TÜV Süd.',
   'back.u.c3h': 'One chimney for up to six ovens',
   'back.u.c3p': 'The induced-draught fan on the system controls the oven draught centrally – no vapour dampers, no individual adjustment per oven. The result: consistent baking results, whatever the weather.',
   'back.u.c4h': 'Bypass as standard',
@@ -60,5 +60,5 @@ Object.assign(I18N.en, {
   'back.c.dNextLink': 'Funding for waste-heat projects →',
 
   'back.ph.a1': 'RETHERM heat recovery above a line of three ROTOTHERM rack ovens with central controls',
-  'back.ph.c1': 'The complete system: RETHERM unit above a ROTOTHERM oven line – collecting duct, smooth-tube heat exchanger, chimney tie-in and controls.',
+  'back.ph.c1': 'The complete system: RETHERM unit above a ROTOTHERM oven line – collecting duct, flue gas heat exchanger, chimney tie-in and controls.',
 });

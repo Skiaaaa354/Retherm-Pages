@@ -26,7 +26,7 @@ Object.assign(I18N.en, {
   'firma.l.c2h': 'Sizing & planning',
   'firma.l.c2p': 'Heat exchanger, buffer tank, induced-draft fan and controls are sized for your actual operating pattern. The planning data also serves as the basis for the funding application.',
   'firma.l.c3h': 'System construction',
-  'firma.l.c3p': 'Built in-house: smooth-tube heat exchanger with self-cleaning, Siemens PLC controls, bypass as standard – 100% made in Germany.',
+  'firma.l.c3p': 'Built in-house: flue gas heat exchanger with self-cleaning, Siemens PLC controls, bypass as standard – 100% made in Germany.',
   'firma.l.c4h': 'Chimney integration',
   'firma.l.c4p': 'Our founding craft. Tie-in, draft behaviour and flue routing are planned and built by us – no subcontractor interface.',
   'firma.l.c5h': 'Commissioning',

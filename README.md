@@ -38,12 +38,29 @@ auf jeder Seite, durchgängig zweisprachig (DE/EN).
 - Header/Footer sind bewusst in jede Seite kopiert (kein Build-Schritt).
   Bei Änderungen: in allen HTML-Dateien nachziehen (Suchen &amp; Ersetzen).
 
+## SEO
+
+- Seitenstruktur nach Abgasquelle fängt die kommerziellen Suchbegriffe der
+  Strategie ab („Wärmerückgewinnung am Industrieofen/Dampfkessel/…");
+  „Abgaswärmetauscher" und „Abwärmenutzung" sind in Titeln, Metas und
+  Fließtext platziert.
+- Strukturierte Daten: Organization + FAQPage (`index.html`),
+  LocalBusiness (`kontakt.html`) – als JSON-LD, ohne Domain-Abhängigkeit.
+- FAQ-Sektion auf der Startseite beantwortet die typischen Long-Tail-Fragen
+  (Kosten, Förderung, Amortisation, Produktionssicherheit).
+- `robots.txt` und `sitemap.xml` liegen bereit (Platzhalter-Domain!).
+
 ## Vor Go-Live (offene Punkte)
 
 1. Impressum/Datenschutz: markierte TODO-Boxen klären (Betreiber, USt-ID, Hoster).
-2. Referenzen: echte Projektfotos und Kennzahlen einsetzen (`referenzen.html`).
+2. Referenzen: Kennzahlen und restliche Projektfotos einsetzen (`referenzen.html`).
 3. Rechner-Annahmen mit realen Anlagendaten abgleichen (`calc-core.js`).
-4. Domain-Entscheidung (Strategie 2.1 offen); danach Canonical/hreflang und
-   `sitemap.xml` mit absoluten URLs ergänzen.
+4. Domain-Entscheidung (Strategie 2.1 offen); danach:
+   - `sitemap.xml`: Platzhalter `https://IHRE-DOMAIN.de` ersetzen,
+     Sitemap-Zeile in `robots.txt` aktivieren;
+   - Canonical-Tags und `hreflang` ergänzen; Open-Graph-Tags mit absoluter
+     Bild-URL nachziehen;
+   - Google Search Console einrichten und Sitemap einreichen.
 5. Google-Ads-Conversion-Tracking erst nach Cookie-/Consent-Entscheidung –
-   aktuell ist die Seite bewusst tracking-frei.
+   aktuell ist die Seite bewusst tracking-frei (Strategie verlangt Tracking
+   vor dem ersten Ads-Euro; dafür braucht es dann eine Consent-Lösung).

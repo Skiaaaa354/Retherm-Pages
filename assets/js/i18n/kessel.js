@@ -4,7 +4,7 @@
 
 Object.assign(I18N.en, {
   'kessel.title': 'Heat recovery from steam boilers | RETHERM',
-  'kessel.desc': 'Behind steam and hot-water boilers, flue gas leaves at typically 160–230 °C – over thousands of operating hours. RETHERM recovers that heat as a complete economiser system: for feedwater, heating and hot water, with smooth-tube exchanger, bypass, induced-draft fan and Siemens controls.',
+  'kessel.desc': 'Behind steam and hot-water boilers, flue gas leaves at typically 160–230 °C – over thousands of operating hours. RETHERM recovers that heat as a complete economiser system: for feedwater, heating and hot water, with flue gas heat exchanger, bypass, induced-draft fan and Siemens controls.',
   'kessel.h1': 'Heat recovery from steam boilers: <em>less fuel for the same steam.</em>',
   'kessel.lead': 'Steam and hot-water boilers in the process industries often run for thousands of hours a year – sending flue gas at typically 160 to 230 °C up the chimney. An economiser brings that heat back. As a rule of thumb: around 1 % fuel saving for every 20 K or so of flue gas cooling.',
 
@@ -23,14 +23,14 @@ Object.assign(I18N.en, {
   'kessel.u.lead': 'The RETHERM system sits in the flue gas path behind your existing boiler – no intervention in the boiler itself is needed. Bypass and induced-draft fan come as standard, so your steam supply never depends on the recovery unit.',
   'kessel.u.c1h': 'The economiser principle',
   'kessel.u.c1p': 'The heat exchanger cools the flue gas behind the boiler. The recovered heat passes through the buffer tank to feedwater, heating or hot water – the boiler runs on as before, just on less fuel.',
-  'kessel.u.c2h': 'Smooth tubes with self-cleaning',
-  'kessel.u.c2p': 'Smooth-tube heat exchangers forgive soot and deposits where finned exchangers clog. A self-cleaning function and a large cleaning hatch keep servicing down to one appointment per year.',
+  'kessel.u.c2h': 'Self-cleaning instead of sooted up',
+  'kessel.u.c2p': 'The flue gas heat exchanger is designed for soot and deposits: smooth tubes that little sticks to, instead of delicate fins. A self-cleaning function and a large cleaning hatch keep servicing down to one appointment per year.',
   'kessel.u.c3h': 'Bypass as standard',
   'kessel.u.c3p': 'Maintenance or a fault at the recovery unit? The bypass routes the flue gas straight to the chimney – boiler and steam supply keep running without interruption. Production always has priority.',
   'kessel.u.c4h': 'Induced draft keeps the draught',
   'kessel.u.c4p': 'The additional exchanger adds resistance to the flue gas path. The induced-draft fan compensates for it and keeps the draught conditions at the boiler stable – the burner works as before.',
   'kessel.u.c5h': 'Condensing stage',
-  'kessel.u.c5p': 'With deep cooling, the water vapour in the flue gas condenses and releases additional latent heat. The smooth-tube exchanger captures this condensing effect too – the yield rises beyond plain flue gas cooling.',
+  'kessel.u.c5p': 'With deep cooling, the water vapour in the flue gas condenses and releases additional latent heat. The heat exchanger captures this condensing effect too – the yield rises beyond plain flue gas cooling.',
   'kessel.u.c6h': 'Controls & integration',
   'kessel.u.c6p': 'The Siemens PLC controls exchanger, buffer and induced-draft fan and shows all actual values on the touch display, web access included. We plan and build the tie-in to feedwater and heating circuits with it.',
 

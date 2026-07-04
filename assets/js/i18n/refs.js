@@ -25,7 +25,7 @@ Object.assign(I18N.en, {
   'refs.g.c1h': 'Bakery · Southern Germany',
   'refs.g.c1p': 'Several baking ovens, batch-fired baking, hot water needed all year round for production and cleaning: the typical bakery situation. In the bakery segment we deliver together with WP Bakery Technologies.',
   'refs.g.c2h': 'Metal processing',
-  'refs.g.c2p': 'Hot, often dusty furnace exhaust in multi-shift operation – the case the self-cleaning smooth-tube heat exchanger is built for. The heat goes into hall heating and processes.',
+  'refs.g.c2p': 'Hot, often dusty furnace exhaust in multi-shift operation – the case the self-cleaning heat exchanger is built for. The heat goes into hall heating and processes.',
   'refs.g.c3h': 'Food production',
   'refs.g.c3p': 'Boiler and process exhaust meets continuous heat demand: cleaning, hot water, space heating. Recovery and demand are rarely this close together.',
   'refs.g.c4h': 'CHP retrofit',

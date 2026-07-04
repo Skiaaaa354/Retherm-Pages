@@ -4,14 +4,14 @@
 
 Object.assign(I18N.en, {
   'bhkw.title': 'Heat recovery from CHP units | RETHERM',
-  'bhkw.desc': 'CHP exhaust is extremely hot at typically 400–550 °C and runs on base load for thousands of hours a year. RETHERM retrofits a smooth-tube heat exchanger downstream and raises the overall efficiency – with induced-draft fan, bypass and chimney integration as a complete system, without ever putting the engine at risk.',
+  'bhkw.desc': 'CHP exhaust is extremely hot at typically 400–550 °C and runs on base load for thousands of hours a year. RETHERM retrofits a flue gas heat exchanger downstream and raises the overall efficiency – with induced-draft fan, bypass and chimney integration as a complete system, without ever putting the engine at risk.',
   'bhkw.h1': 'Heat recovery from CHP units: <em>the hottest flue gas runs on base load.</em>',
   'bhkw.lead': 'A combustion engine releases its exhaust at typically 400 to 550 °C – hotter than almost any other flue gas source on site. And because CHP units often run 4,000 to 8,000 hours a year on base load, every unused degree turns into a large number.',
 
   'bhkw.a.tag': '01 — The starting point',
   'bhkw.a.h2': 'Your CHP uses the cooling water fully. Its exhaust, often not.',
   'bhkw.a.p1': 'CHP units are considered efficient – and for the engine cooling water that is true: most installations use this heat completely. The exhaust is a different story. Many existing CHP units discharge it still several hundred degrees hot after a first heat exchanger – or entirely unused.',
-  'bhkw.a.p2': 'This is exactly where the downstream retrofit comes in: an additional smooth-tube heat exchanger recovers the residual heat from the exhaust and raises the overall efficiency of the plant – with no intervention in the engine and no change to your electricity generation.',
+  'bhkw.a.p2': 'This is exactly where the downstream retrofit comes in: a downstream flue gas heat exchanger recovers the residual heat from the exhaust and raises the overall efficiency of the plant – with no intervention in the engine and no change to your electricity generation.',
   'bhkw.a.p3': 'That applies to natural-gas CHP in industry and district schemes just as much as to biogas CHP – where the recovered heat meets a demand that already exists: digester heating and drying.',
   'bhkw.a.l1': 'typical exhaust temperature at the engine outlet – the hottest flue gas among the common sources.',
   'bhkw.a.l2': 'running time of many CHP units on base load – the recovery unit runs along virtually all the time.',
@@ -27,8 +27,8 @@ Object.assign(I18N.en, {
   'bhkw.u.c2p': 'Every engine has a permissible exhaust back pressure. The induced-draft fan compensates the resistance of the exchanger and keeps the back pressure within the range approved by the manufacturer – sized for your engine, not for an average.',
   'bhkw.u.c3h': 'Bypass as standard',
   'bhkw.u.c3p': 'Maintenance or a fault at the recovery unit? The bypass routes the exhaust straight to the chimney – your CHP keeps running without interruption. Electricity and heat generation always have priority.',
-  'bhkw.u.c4h': 'Smooth tubes, not fins',
-  'bhkw.u.c4p': 'Biogas exhaust in particular carries soot and deposits. Smooth-tube heat exchangers forgive that where finned exchangers clog. A self-cleaning function and a large cleaning hatch keep servicing down to one appointment per year.',
+  'bhkw.u.c4h': 'Unfazed by soot',
+  'bhkw.u.c4p': 'Biogas exhaust in particular carries soot and deposits. The heat exchanger forgives that: smooth tubes that little sticks to, instead of delicate fins. A self-cleaning function and a large cleaning hatch keep servicing down to one appointment per year.',
   'bhkw.u.c5h': 'Siemens controls',
   'bhkw.u.c5p': 'A PLC with touch display controls fan and bypass automatically and shows all actual values transparently; optional sensors deliver the data for energy management and ISO 50001. Web access included.',
   'bhkw.u.c6h': 'Chimney from one source',

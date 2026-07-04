@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Nach der Domain-Entscheidung aktivieren (Platzhalter ersetzen):
+# Sitemap: https://IHRE-DOMAIN.de/sitemap.xml
