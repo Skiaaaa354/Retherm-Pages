@@ -143,18 +143,6 @@ Object.assign(I18N.en, {
   'home.prin.sMount2': 'CEILING · ABOVE THE LINE · SERVICE LEVEL',
   'home.prin.sUsers': 'HEAT CONSUMERS',
 
-  'home.h3d.hint': 'Scroll — follow the heat',
-  'home.h3d.c1t': '01 · Flue inlet',
-  'home.h3d.c1p': 'Hot flue gas enters the unit at the rear – up to 250 °C and more, straight from furnace, boiler or CHP.',
-  'home.h3d.c2t': '02 · Heat transfer',
-  'home.h3d.c2p': 'Inside, the flue gas hands its heat to the water circuit – red turns grey, the energy stays in the building. (Illustrative view)',
-  'home.h3d.c3t': '03 · Flue outlet & fan',
-  'home.h3d.c3p': 'Cooled to around 60 °C, the gas leaves the unit. The induced-draft fan keeps the draft constant; the bypass damper protects production.',
-  'home.h3d.c4t': '04 · Water in counterflow',
-  'home.h3d.c4p': 'Return water enters cold; the flow line carries about 70 °C back into the site – deep blue turns turquoise, then gold.',
-  'home.h3d.c5t': '05 · Buffer tank',
-  'home.h3d.c5p': 'The heat stratifies: cold below, hot on top. Stored for the moment your site needs it.',
-
   'home.faq.q7': 'How much space does the system need?',
   'home.faq.a7': 'No floor space. The RETHERM unit is suspended from the ceiling, mounted directly above the line or installed on a second service level – your production floor stays untouched. Only the buffer tank needs a spot, usually in the boiler room.',
 });

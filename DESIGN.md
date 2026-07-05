@@ -66,14 +66,14 @@ Foto-Slot · Footer.
 
 ## 3D-Hero
 
-Startseite: Three.js-Szene (Vendored, kein Build) nach den Produktrenderings –
-Kamineingang hinten, Kaminausgang mit Saugzug-Motor vorne, Vor-/Rücklauf
-seitlich, Pufferspeicher mit Schichtungs-Shader. GSAP-ScrollTrigger scrubbt
-eine Kamerafahrt durch sechs Kapitel (Sticky-Stage, 560vh); Partikel tragen
-die Farbdramaturgie: Abgas Rot→Grau, Wasser Dunkelblau→Türkis→Gold im
-Gegenstrom. Innenleben nur als generische Leuchtspur („beispielhafte
-Darstellung") – nie die reale Tauschergeometrie. Fallback: statischer Hero
-(Partikel-CSS) ohne WebGL/bei reduced motion.
+Startseite: ruhige Three.js-Produktszene (vendored, kein Build) nach den
+Renderings – Einheit an zwei Abhängestangen (Deckenmontage-Botschaft),
+orthogonale Rohrführung mit echtem 90°-Bogen zum Kamin, Saugzug-Motor,
+Vor-/Rücklauf mit Farbringen. Fester Kamerablick, kaum merkliches Atmen,
+Maus-Parallax, Tooltips; Partikel: Glut strömt ein, gekühltes Grau verlässt
+den Kamin. Weniger ist mehr: kein Scroll-Hijacking, kein Tank, keine
+Kamerafahrt. Innenleben wird nicht gezeigt (Wettbewerbsschutz). Fallback:
+statischer Hero ohne WebGL/bei reduced motion.
 
 ## Motion
 

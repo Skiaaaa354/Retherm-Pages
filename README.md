@@ -10,9 +10,9 @@ auf jeder Seite, durchgängig zweisprachig (DE/EN).
 
 - Reines HTML/CSS/JS, kein Build-Schritt, keine externen Abhängigkeiten zur
   Laufzeit (Fonts selbst gehostet – DSGVO, keine Cookies).
-- 3D-Hero auf der Startseite: Three.js + GSAP ScrollTrigger, beide lokal in
-  `assets/vendor/` (MIT- bzw. GSAP-Standardlizenz). Scroll-Kamerafahrt entlang
-  des Wärmewegs, Partikelströme, Hover-Tooltips, Maus-Parallax. Fällt ohne
+- 3D-Hero auf der Startseite: Three.js, lokal in `assets/vendor/` (MIT).
+  Ruhige Produktszene mit orthogonaler Rohrführung, dezenten Partikelströmen,
+  Hover-Tooltips und Maus-Parallax – kein Scroll-Hijacking. Fällt ohne
   WebGL oder bei `prefers-reduced-motion` automatisch auf den statischen
   Hero zurück (`assets/js/scene3d.js`). Das Innenleben des Wärmetauschers
   wird bewusst nur als generische Leuchtspur gezeigt (Wettbewerbsschutz).
