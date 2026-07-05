@@ -64,6 +64,17 @@ Signalfarben-Kante) · Anlagenschema (Inline-SVG, Strichzeichnung mit
 animierten Medienflüssen) · check-form / contact-form · ref-Karten mit
 Foto-Slot · Footer.
 
+## 3D-Hero
+
+Startseite: Three.js-Szene (Vendored, kein Build) nach den Produktrenderings –
+Kamineingang hinten, Kaminausgang mit Saugzug-Motor vorne, Vor-/Rücklauf
+seitlich, Pufferspeicher mit Schichtungs-Shader. GSAP-ScrollTrigger scrubbt
+eine Kamerafahrt durch sechs Kapitel (Sticky-Stage, 560vh); Partikel tragen
+die Farbdramaturgie: Abgas Rot→Grau, Wasser Dunkelblau→Türkis→Gold im
+Gegenstrom. Innenleben nur als generische Leuchtspur („beispielhafte
+Darstellung") – nie die reale Tauschergeometrie. Fallback: statischer Hero
+(Partikel-CSS) ohne WebGL/bei reduced motion.
+
 ## Motion
 
 Zurückhaltend, physikalisch begründet: aufsteigende Glut-Partikel im Hero

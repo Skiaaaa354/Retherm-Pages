@@ -46,7 +46,43 @@
 
 <main id="top">
 
-  <!-- ================= Hero ================= -->
+  <!-- ================= 3D-Hero: der Weg der Wärme ================= -->
+  <section class="hero3d" id="hero3d" hidden>
+    <div class="hero3d__stage" id="hero3d-stage">
+      <canvas id="hero3d-canvas" aria-hidden="true"></canvas>
+      <div class="hero3d__vignette" aria-hidden="true"></div>
+      <div class="hero3d__overlay">
+        <div class="hero3d__intro wrap" id="hero3d-intro"></div>
+        <div class="hero3d__caption">
+          <span class="tag tag--heat" data-i18n="home.h3d.c1t">01 · Kamineingang</span>
+          <p data-i18n="home.h3d.c1p">Heißes Abgas strömt hinten in die Einheit – bis zu 250 °C und mehr, direkt aus Ofen, Kessel oder BHKW.</p>
+        </div>
+        <div class="hero3d__caption">
+          <span class="tag tag--heat" data-i18n="home.h3d.c2t">02 · Wärmeübertragung</span>
+          <p data-i18n="home.h3d.c2p">Im Inneren gibt das Abgas seine Wärme an den Wasserkreis ab – aus Rot wird Grau, die Energie bleibt im Haus. (Beispielhafte Darstellung)</p>
+        </div>
+        <div class="hero3d__caption">
+          <span class="tag tag--heat" data-i18n="home.h3d.c3t">03 · Kaminausgang &amp; Saugzug</span>
+          <p data-i18n="home.h3d.c3p">Auf rund 60 °C gekühlt verlässt das Abgas die Einheit. Der Saugzug hält den Zug konstant, die Bypassklappe sichert die Produktion.</p>
+        </div>
+        <div class="hero3d__caption">
+          <span class="tag tag--heat" data-i18n="home.h3d.c4t">04 · Wasser im Gegenstrom</span>
+          <p data-i18n="home.h3d.c4p">Rücklauf kalt hinein, Vorlauf mit rund 70 °C zurück in den Betrieb – dunkles Blau wird Türkis, dann Gold.</p>
+        </div>
+        <div class="hero3d__caption">
+          <span class="tag tag--heat" data-i18n="home.h3d.c5t">05 · Pufferspeicher</span>
+          <p data-i18n="home.h3d.c5p">Die Wärme schichtet sich: unten kalt, oben heiß. Gespeichert für den Moment, in dem Ihr Betrieb sie braucht.</p>
+        </div>
+      </div>
+      <div class="hero3d__tooltip" id="hero3d-tooltip" hidden>
+        <span class="tt-title"></span>
+        <span class="tt-text"></span>
+      </div>
+      <div class="hero3d__hint" id="hero3d-hint" data-i18n="home.h3d.hint">Scrollen — der Weg der Wärme</div>
+    </div>
+  </section>
+
+  <!-- ================= Hero (Fallback ohne WebGL) ================= -->
   <section class="hero">
     <svg class="hero__flow" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
       <g class="flow-up">
@@ -566,5 +602,9 @@
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/i18n/home.js"></script>
 <script src="assets/js/app.js"></script>
+<script type="importmap">{ "imports": { "three": "./assets/vendor/three.module.min.js" } }</script>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script type="module" src="assets/js/scene3d.js"></script>
 </body>
 </html>

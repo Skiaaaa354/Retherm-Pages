@@ -8,8 +8,14 @@ auf jeder Seite, durchgängig zweisprachig (DE/EN).
 
 ## Technik
 
-- Reines HTML/CSS/JS, kein Build-Schritt, keine Frameworks, keine externen
-  Abhängigkeiten zur Laufzeit (Fonts selbst gehostet – DSGVO, keine Cookies).
+- Reines HTML/CSS/JS, kein Build-Schritt, keine externen Abhängigkeiten zur
+  Laufzeit (Fonts selbst gehostet – DSGVO, keine Cookies).
+- 3D-Hero auf der Startseite: Three.js + GSAP ScrollTrigger, beide lokal in
+  `assets/vendor/` (MIT- bzw. GSAP-Standardlizenz). Scroll-Kamerafahrt entlang
+  des Wärmewegs, Partikelströme, Hover-Tooltips, Maus-Parallax. Fällt ohne
+  WebGL oder bei `prefers-reduced-motion` automatisch auf den statischen
+  Hero zurück (`assets/js/scene3d.js`). Das Innenleben des Wärmetauschers
+  wird bewusst nur als generische Leuchtspur gezeigt (Wettbewerbsschutz).
 - Deploybar auf jedem statischen Host, z. B. GitHub Pages: Repository-Settings
   → Pages → Branch `main`, Ordner `/ (root)`. Es wird kein Server-Code
   benötigt; `.claude/serve.ps1` dient nur der lokalen Vorschau.
