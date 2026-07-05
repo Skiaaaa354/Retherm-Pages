@@ -64,17 +64,6 @@ Signalfarben-Kante) · Anlagenschema (Inline-SVG, Strichzeichnung mit
 animierten Medienflüssen) · check-form / contact-form · ref-Karten mit
 Foto-Slot · Footer.
 
-## 3D-Hero
-
-Startseite: ruhige Three.js-Produktszene (vendored, kein Build) nach den
-Renderings – Einheit an zwei Abhängestangen (Deckenmontage-Botschaft),
-orthogonale Rohrführung mit echtem 90°-Bogen zum Kamin, Saugzug-Motor,
-Vor-/Rücklauf mit Farbringen. Fester Kamerablick, kaum merkliches Atmen,
-Maus-Parallax, Tooltips; Partikel: Glut strömt ein, gekühltes Grau verlässt
-den Kamin. Weniger ist mehr: kein Scroll-Hijacking, kein Tank, keine
-Kamerafahrt. Innenleben wird nicht gezeigt (Wettbewerbsschutz). Fallback:
-statischer Hero ohne WebGL/bei reduced motion.
-
 ## Motion
 
 Zurückhaltend, physikalisch begründet: aufsteigende Glut-Partikel im Hero

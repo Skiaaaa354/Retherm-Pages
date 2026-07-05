@@ -46,23 +46,7 @@
 
 <main id="top">
 
-  <!-- ================= 3D-Hero: der Weg der Wärme ================= -->
-  <section class="hero3d" id="hero3d" hidden>
-    <div class="hero3d__stage" id="hero3d-stage">
-      <canvas id="hero3d-canvas" aria-hidden="true"></canvas>
-      <div class="hero3d__vignette" aria-hidden="true"></div>
-      <div class="hero3d__overlay">
-        <div class="hero3d__intro wrap" id="hero3d-intro"></div>
-        <div class="hero3d__stats wrap" id="hero3d-stats"></div>
-      </div>
-      <div class="hero3d__tooltip" id="hero3d-tooltip" hidden>
-        <span class="tt-title"></span>
-        <span class="tt-text"></span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= Hero (Fallback ohne WebGL) ================= -->
+  <!-- ================= Hero ================= -->
   <section class="hero">
     <svg class="hero__flow" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
       <g class="flow-up">
@@ -582,7 +566,5 @@
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/i18n/home.js"></script>
 <script src="assets/js/app.js"></script>
-<script type="importmap">{ "imports": { "three": "./assets/vendor/three.module.min.js" } }</script>
-<script type="module" src="assets/js/scene3d.js"></script>
 </body>
 </html>
