@@ -1183,6 +1183,64 @@ a.src-card:hover { background: var(--paper); }
 
 a.src-card:hover .src-more { color: var(--heat); }
 
+/* ---------- Quellen-Familien (Abgasquellen-Übersicht) ---------- */
+
+.family-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1px;
+  background: var(--line-dark);
+  border: 1px solid var(--line-dark);
+}
+
+.family {
+  background: var(--coal);
+  padding: 28px 26px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.family h3 { color: #fff; margin-bottom: 14px; }
+
+.family ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.family li {
+  font-size: 15.5px;
+  color: rgba(255,255,255,.78);
+  padding: 7px 0;
+  border-top: 1px solid var(--line-dark);
+}
+
+.family li:last-child { border-bottom: 1px solid var(--line-dark); }
+
+.family__more { margin: 16px 0 0; font-size: 14px; line-height: 1.9; }
+
+.family__more a {
+  color: var(--heat);
+  text-decoration: none;
+}
+
+.family__more a:hover { color: #fff; }
+
+/* Fließendes Quellen-/Branchen-Band */
+.src-flow {
+  font-family: var(--font-head);
+  font-size: clamp(20px, 2.6vw, 30px);
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  color: var(--ink-soft);
+  max-width: none;
+  margin: 0;
+}
+
+.section--dark .src-flow { color: rgba(255,255,255,.75); }
+
 /* ---------- Teaser-Panels (Start) ---------- */
 
 .teaser {

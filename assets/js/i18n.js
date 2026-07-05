@@ -20,6 +20,7 @@ const I18N = {
     'brand.sub': 'Heat recovery from flue gas · powered by Ganzenmüller',
     'nav.home': 'Home',
     'nav.sources': 'Flue gas sources',
+    'nav.srcAll': 'All flue gas sources',
     'nav.srcOven': 'Industrial furnaces',
     'nav.srcBoiler': 'Steam boilers',
     'nav.srcChp': 'CHP units',

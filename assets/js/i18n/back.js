@@ -4,14 +4,14 @@
 
 Object.assign(I18N.en, {
   'back.title': 'Heat recovery from bakery ovens | RETHERM powered by Ganzenmüller',
-  'back.desc': 'Bakery ovens send flue gas and vapour up the chimney at 200–300 °C. RETHERM combines both and recovers a quarter of your baking energy – guaranteed. Offered jointly with WP Bakery Technologies, retrofittable to MATADOR and ROTOTHERM ovens.',
+  'back.desc': 'Bakery ovens send flue gas and vapour up the chimney at 200–300 °C. RETHERM combines both and recovers a quarter of your baking energy – guaranteed. Offered jointly with WP Bakery Technologies, retrofittable to deck, rack and tunnel ovens.',
   'back.h1': 'Heat recovery from bakery ovens: <em>a quarter of the energy back. Guaranteed.</em>',
   'back.lead': 'Baking is our home game: RETHERM was developed for bakeries and is offered jointly with WP Bakery Technologies. The system combines flue gas and vapour from your oven line and recovers a quarter of the baking energy you put in – as hot water, heating and proofing heat.',
 
   'back.a.tag': '01 — The starting point',
   'back.a.h2': 'What comes out at the top, you paid for at the bottom.',
   'back.a.p1': 'Baking takes a lot of energy – and a considerable share of it leaves the bakery unused, as hot flue gas and vapour up the chimney. Every kilowatt hour of it was bought and burnt.',
-  'back.a.p2': 'RETHERM was developed for exactly this and is offered jointly with WP Bakery Technologies – Werner & Pfleiderer has been building baking ovens for more than 140 years. The system can be retrofitted to MATADOR deck ovens and ROTOTHERM rack ovens, or planned straight into a new oven line.',
+  'back.a.p2': 'RETHERM was developed for exactly this and is offered jointly with WP Bakery Technologies – Werner & Pfleiderer has been building baking ovens for more than 140 years. The system can be retrofitted to deck ovens (MATADOR), rack ovens (ROTOTHERM) and tunnel or conveyor ovens, or planned straight into a new oven line.',
   'back.a.p3': 'A quarter of the baking energy you put in can be recovered – guaranteed. What makes this possible is combining flue gas and vapour: alongside the sensible heat, a lot of energy sits in the water vapour, and the heat exchanger recovers it as condensation heat.',
   'back.a.l1': 'flue gas leaves the oven line far above any useful temperature – plus the vapour with the condensation heat of the steam.',
   'back.a.l2': 'of the baking energy you put in can be recovered. Guaranteed.',
@@ -33,7 +33,7 @@ Object.assign(I18N.en, {
   'back.u.c5h': 'Mounted above the oven line',
   'back.u.c5p': 'The system is installed above the ovens or on ceiling and wall – no extra floor space in the bakery, no inaccessible dirt corners.',
   'back.u.c6h': 'Retrofittable to WP ovens',
-  'back.u.c6p': 'A joint offering with WP Bakery Technologies: retrofittable to MATADOR deck ovens and ROTOTHERM rack ovens, or planned into your new oven line from the start. Oven builder and system builder coordinate directly – you have one point of contact.',
+  'back.u.c6p': 'A joint offering with WP Bakery Technologies: retrofittable to deck, rack and tunnel ovens, or planned into your new oven line from the start. Oven builder and system builder coordinate directly – you have one point of contact.',
 
   'back.w.tag': '03 — Where the heat goes',
   'back.w.h2': 'From the chimney back into the bakery.',

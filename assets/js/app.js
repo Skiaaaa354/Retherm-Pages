@@ -25,7 +25,9 @@
 
   function applyText(node, value) {
     if (value == null) return;
-    if (value.includes('<')) node.innerHTML = value;
+    // innerHTML auch bei Entities (&amp; …): der DE-Cache stammt aus innerHTML,
+    // textContent würde sie doppelt escapen
+    if (value.includes('<') || value.includes('&')) node.innerHTML = value;
     else node.textContent = value;
   }
 
