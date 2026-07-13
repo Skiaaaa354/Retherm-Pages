@@ -52,7 +52,8 @@ auf jeder Seite, durchgängig zweisprachig (DE/EN).
 
 ## Vor Go-Live (offene Punkte)
 
-1. Impressum/Datenschutz: markierte TODO-Boxen klären (Betreiber, USt-ID, Hoster).
+1. ~~Impressum/Datenschutz~~ ✓ erledigt (Angaben von ganzenmueller.de
+   übernommen, Hosting-Abschnitt: GitHub Pages).
 2. Referenzen: Kennzahlen und restliche Projektfotos einsetzen (`referenzen.html`) –
    laut SEO-Audit der sichtbarste Schwachpunkt („folgt“-Platzhalter direkt
    neben dem Anspruch „Zahlen verkaufen“).
