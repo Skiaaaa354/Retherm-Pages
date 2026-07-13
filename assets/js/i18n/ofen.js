@@ -6,7 +6,7 @@ Object.assign(I18N.en, {
   'ofen.title': 'Heat recovery from industrial furnaces | RETHERM',
   'ofen.desc': 'Industrial furnaces deliver flue gas at 200–500 °C over thousands of operating hours – the richest waste-heat source on site. RETHERM turns it into heating, hot water and process heat: a complete system with heat exchanger, buffer tank, controls and chimney integration.',
   'ofen.h1': 'Heat recovery from industrial furnaces: <em>the richest source on site.</em>',
-  'ofen.lead': 'Hardening, annealing, melting, firing: thermal processes send flue gas at 200 to 500 °C up the chimney – often in multi-shift operation, thousands of hours a year. Exactly this combination of temperature and running time makes recovery so profitable.',
+  'ofen.lead': 'Hardening, annealing, melting, firing: thermal processes send flue gas at 200 to 500 °C up the chimney – often in multi-shift operation, thousands of hours a year. Exactly this combination of temperature and running time makes recovery so profitable. RETHERM is a turnkey complete system by Ganzenmüller GmbH for heat recovery from flue gas – it turns this lost heat into heating, hot water and process heat.',
 
   'ofen.a.tag': '01 — The starting point',
   'ofen.a.h2': 'Your furnace works in shifts. So does its flue gas.',
@@ -57,4 +57,15 @@ Object.assign(I18N.en, {
   'ofen.c.dMail': 'E-mail',
   'ofen.c.dNext': 'Also relevant',
   'ofen.c.dNextLink': 'Funding for waste-heat projects →',
+
+  'ofen.faq.tag': '04 — Frequently asked',
+  'ofen.faq.h2': 'What furnace operators ask us first.',
+  'ofen.faq.q1': 'Is heat recovery worth it on an industrial furnace?',
+  'ofen.faq.a1': 'In most cases, yes – the industrial furnace is one of the richest waste-heat sources on site. Hardening, annealing, melting and firing furnaces deliver flue gas at 200 to 500 °C, often over 4,000 to 8,000 operating hours a year. High temperature means high transferable output, and many hours mean every recovered kilowatt runs often – together that shortens the payback to typically a few years. The prerequisite is a heat demand on site: hall heating, hot water or process heat. The potential check works out from flue gas temperature, volume flow and operating hours exactly what your furnace exhaust holds.',
+  'ofen.faq.q2': 'Does heat recovery work with dusty furnace exhaust?',
+  'ofen.faq.a2': 'Yes, that is precisely what the system is built for. The flue gas heat exchanger relies on smooth tubes that dust barely sticks to – instead of delicate fins that can clog. A self-cleaning function and a large cleaning hatch keep the effort low: one service appointment per year is usually enough. Temperature peaks and changing operating patterns, for instance in batch operation, also feed into the sizing of heat exchanger, buffer tank and controls. So the recovery stays reliably effective even with rough furnace exhaust – sized for your actual operating pattern, not for a datasheet ideal.',
+  'ofen.faq.q3': 'Does the furnace have to stand still for installation and servicing?',
+  'ofen.faq.a3': 'Production always has priority – that is the basic principle of the system. The RETHERM unit needs no floor space: it is suspended from the ceiling, mounted directly above the furnace or installed on a second service level; only the buffer tank needs a spot, usually in the boiler room. The chimney tie-in is planned and built by us and coordinated with your operating pattern. And in operation: during maintenance, in case of a fault or when the buffer tank is full, the standard bypass routes the flue gas straight to the chimney – your furnace keeps running unchanged, as if the system were not there. Tested by TÜV Süd.',
+  'ofen.faq.q4': 'How much heat does the exhaust of an industrial furnace deliver?',
+  'ofen.faq.a4': 'As a worked example: just 3,000 m³/h of flue gas at 300 °C deliver around 90 kW of usable output – in three-shift operation that quickly adds up to six-figure kilowatt hours per year. The output range spans from a single furnace in the kilowatt range to a furnace line with a shared chimney in the megawatt range. For context: our pledge of a quarter of the energy back, guaranteed, applies to the baking-oven segment; on industrial furnaces we calculate the potential individually from flue gas temperature, volume flow and operating hours. That is exactly what the potential check does: within a minute it shows the output and annual yield hiding in your furnace exhaust.',
 });

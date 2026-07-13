@@ -53,6 +53,9 @@ Object.assign(I18N.en, {
   'qz.n.lead': 'The list above is orientation, not an admission ticket. More than 100 systems over decades mean above all: a great many special cases. If hot flue gas leaves your building, we will assess it – regardless of what the machine that makes it is called.',
   'qz.n.band': 'Bakery & food · Metal & hardening shops · Ceramics & bricks · Chemicals & pharma · Wood & paper · Textiles & laundries · Agriculture & biogas · Energy & municipalities · Foundries & casting · Glass & building materials – and every industry this list forgot.',
 
+  'qz.ph.a1': 'RETHERM complete heat recovery system: flue gas heat exchanger above an oven line with collecting duct and chimney tie-in',
+  'qz.ph.c1': 'One system, many sources: RETHERM unit with collecting duct, here above an oven line.',
+
   'qz.c.tag': 'The next step',
   'qz.c.h2': 'Three figures are enough for a first answer.',
   'qz.c.p': 'Flue gas temperature, volume flow, operating hours – the potential check works out in one minute what your source is worth. And if you do not know the values: call us, we will help you estimate.',

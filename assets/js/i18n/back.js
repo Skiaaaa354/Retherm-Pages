@@ -6,7 +6,7 @@ Object.assign(I18N.en, {
   'back.title': 'Heat recovery from bakery ovens | RETHERM powered by Ganzenmüller',
   'back.desc': 'Bakery ovens send flue gas and vapour up the chimney at 200–300 °C. RETHERM combines both and recovers a quarter of your baking energy – guaranteed. Offered jointly with WP Bakery Technologies, retrofittable to deck, rack and tunnel ovens.',
   'back.h1': 'Heat recovery from bakery ovens: <em>a quarter of the energy back. Guaranteed.</em>',
-  'back.lead': 'Baking is our home game: RETHERM was developed for bakeries and is offered jointly with WP Bakery Technologies. The system combines flue gas and vapour from your oven line and recovers a quarter of the baking energy you put in – as hot water, heating and proofing heat.',
+  'back.lead': 'Baking is our home game: RETHERM is a turnkey complete system by Ganzenmüller GmbH for heat recovery from exhaust gas – developed for bakeries and offered jointly with WP Bakery Technologies. The system combines flue gas and vapour from your oven line and recovers a quarter of the baking energy you put in – as hot water, heating and proofing heat.',
 
   'back.a.tag': '01 — The starting point',
   'back.a.h2': 'What comes out at the top, you paid for at the bottom.',
@@ -61,4 +61,15 @@ Object.assign(I18N.en, {
 
   'back.ph.a1': 'RETHERM heat recovery above a line of three ROTOTHERM rack ovens with central controls',
   'back.ph.c1': 'The complete system: RETHERM unit above a ROTOTHERM oven line – collecting duct, flue gas heat exchanger, chimney tie-in and controls.',
+
+  'back.faq.tag': '04 — Frequently asked questions',
+  'back.faq.h2': 'What bakeries ask us first.',
+  'back.faq.q1': 'How much energy does heat recovery save in a bakery?',
+  'back.faq.a1': 'A quarter of the baking energy you put in comes back – for the bakery oven segment, Ganzenmüller guarantees this figure. What makes it possible is combining flue gas and vapour: alongside the sensible heat of the flue gas at 200–300 °C, the flue gas heat exchanger also recovers the condensation heat of the water vapour. The heat is available as hot water, heating and proofing heat. To see what that means in euros, use the potential check: in bakery mode, the annual consumption of your oven line from the gas or oil bill is enough – no flue gas data needed.',
+  'back.faq.q2': 'Does heat recovery change my baking results?',
+  'back.faq.a2': 'No – if anything, the oven draught becomes more consistent. The induced-draught fan on the RETHERM system controls the draught for all connected ovens centrally, with no vapour dampers and no individual adjustment per oven. Your ovens bake under the same conditions whatever the weather – wind and outside temperature no longer affect the chimney draught. The heat exchanger itself transfers the heat indirectly to water and does not interfere with the baking process. Up to six ovens can run on one chimney this way.',
+  'back.faq.q3': 'What happens if there is a fault in the middle of production?',
+  'back.faq.a3': 'Your production keeps running. The standard bypass opens during maintenance, a fault or when the buffer tank is full, and the flue gas flows straight to the chimney – as if the heat recovery were not there. If the central draught control fails, at least one oven keeps baking. Servicing is planned the same way: the self-cleaning function keeps the exchanger clear, and maintenance happens once a year without stopping production. The systems are tested and certified by TÜV Süd.',
+  'back.faq.q4': 'Can RETHERM be fitted to my existing ovens?',
+  'back.faq.a4': 'Yes – RETHERM can be retrofitted to deck ovens, rack ovens and tunnel or conveyor ovens, or planned straight into a new oven line. For bakery ovens the system is offered jointly with WP Bakery Technologies; oven builder and system builder coordinate directly. Up to six ovens can share one chimney. You need no floor space in the bakery: the unit is mounted above the oven line or on ceiling and wall – only the buffer tank needs a spot, usually in the plant room.',
 });

@@ -6,6 +6,11 @@
   <title data-i18n="home.title">RETHERM – Wärmerückgewinnung aus Abgas | Komplettanlagen von Ganzenmüller</title>
   <meta name="description" data-i18n-content="home.desc" content="Überall, wo heißes Abgas nach außen geht, verschenken Sie Energie. RETHERM macht daraus eine nutzbare Wärmequelle – als schlüsselfertige Komplettanlage. Vom Kilowatt- bis in den Megawattbereich, branchenoffen, förderfähig.">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/barlow-condensed-normal-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/barlow-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-mono-normal-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
@@ -21,6 +26,7 @@
       <div class="nav-item">
         <button type="button" class="nav-sub-toggle" aria-expanded="false" data-i18n="nav.sources">Abgasquellen</button>
         <div class="nav-sub">
+          <a href="abgasquellen.html" data-i18n="nav.srcAll">Alle Abgasquellen</a>
           <a href="abgas-industrieofen.html" data-i18n="nav.srcOven">Industrieöfen</a>
           <a href="abgas-dampfkessel.html" data-i18n="nav.srcBoiler">Dampfkessel</a>
           <a href="abgas-bhkw.html" data-i18n="nav.srcChp">Blockheizkraftwerke</a>
@@ -111,7 +117,7 @@
     <div class="wrap">
       <div class="split rv" style="align-items: center">
         <figure class="figure-box" style="margin: 0">
-          <img src="assets/img/retherm-saugabzug.jpg" alt="Die RETHERM-Einheit: Abgaswärmetauscher, Saugzug und Bypassklappe in einem Edelstahlgehäuse" data-i18n-alt="home.unit.alt" fetchpriority="high" style="width: 100%">
+          <img src="assets/img/retherm-saugabzug.webp" alt="Die RETHERM-Einheit: Abgaswärmetauscher, Saugzug und Bypassklappe in einem Edelstahlgehäuse" data-i18n-alt="home.unit.alt" fetchpriority="high" width="1200" height="1029" style="width: 100%; height: auto">
           <figcaption data-i18n="home.unit.cap">Die RETHERM-Einheit – kompakt genug für die Montage über der Anlage oder unter der Decke.</figcaption>
         </figure>
         <div>
@@ -279,15 +285,15 @@
 
       <div class="photo-strip rv">
         <figure>
-          <img src="assets/img/retherm-ofenlinie.jpg" alt="RETHERM-Wärmerückgewinnung über einer Linie aus drei ROTOTHERM-Stikkenöfen" data-i18n-alt="home.ph.a1" loading="lazy">
+          <img src="assets/img/retherm-ofenlinie.webp" alt="RETHERM-Wärmerückgewinnung über einer Linie aus drei ROTOTHERM-Stikkenöfen" data-i18n-alt="home.ph.a1" loading="lazy" width="1600" height="686">
           <figcaption data-i18n="home.ph.c1">So sieht es gebaut aus: RETHERM über einer ROTOTHERM-Ofenlinie.</figcaption>
         </figure>
         <figure>
-          <img src="assets/img/retherm-steuerung.jpg" alt="Siemens-Touchdisplay der RETHERM-Steuerung mit Abgaswerten" data-i18n-alt="home.ph.a2" loading="lazy" style="object-position: center 20%">
+          <img src="assets/img/retherm-steuerung.webp" alt="Siemens-Touchdisplay der RETHERM-Steuerung mit Abgaswerten" data-i18n-alt="home.ph.a2" loading="lazy" width="900" height="771" style="object-position: center 20%">
           <figcaption data-i18n="home.ph.c2">Live am Display: Abgas 278 °C rein, 121 °C raus.</figcaption>
         </figure>
         <figure>
-          <img src="assets/img/referenz-backstube.jpg" alt="Backstube mit Ofenanlage und Edelstahl-Abgasleitungen unter der Decke" data-i18n-alt="home.ph.a3" loading="lazy">
+          <img src="assets/img/referenz-backstube.webp" alt="Backstube mit Ofenanlage und Edelstahl-Abgasleitungen unter der Decke" data-i18n-alt="home.ph.a3" loading="lazy" width="992" height="670">
           <figcaption data-i18n="home.ph.c3">Eingebaut im laufenden Betrieb einer Backstube.</figcaption>
         </figure>
       </div>
@@ -490,6 +496,17 @@
     "addressLocality": "Erbach (Donau)",
     "addressCountry": "DE"
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Wärmerückgewinnung aus Abgas",
+  "name": "RETHERM Wärmerückgewinnungsanlage",
+  "provider": { "@type": "Organization", "name": "Ganzenmüller GmbH" },
+  "areaServed": { "@type": "Country", "name": "Deutschland" },
+  "description": "Schlüsselfertige Komplettanlage zur Wärmerückgewinnung aus Abgas: Abgaswärmetauscher, Pufferspeicher, Siemens-Steuerung und Kaminanbindung aus einer Hand – für Industrieöfen, Dampfkessel, Blockheizkraftwerke, Trocknungsanlagen und Backöfen."
 }
 </script>
 <script type="application/ld+json">

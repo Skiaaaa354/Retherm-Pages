@@ -1,0 +1,41 @@
+# RETHERM – Wärmerückgewinnung aus Abgas
+
+> RETHERM ist eine schlüsselfertige Komplettanlage der Ganzenmüller GmbH
+> (Familien-Meisterbetrieb seit 1980, Erbach an der Donau) zur
+> Wärmerückgewinnung aus Abgas. Sie holt die Wärme aus heißem Abgas zurück –
+> branchenoffen, vom Kilowatt- bis in den Megawattbereich (Industrieöfen,
+> Dampfkessel, Blockheizkraftwerke, Trocknungsanlagen, Backöfen) – und macht
+> daraus Heizung, Warmwasser oder Prozesswärme. TÜV-Süd-zertifiziert,
+> serienmäßiger Bypass, förderfähig nach der Bundesförderung für Energie-
+> und Ressourceneffizienz in der Wirtschaft (EEW).
+
+## Kernfakten
+
+- Rückgewinnung im Backofen-Segment: 25 % der eingesetzten Energie, garantiert; bei anderen Abgasquellen wird das Potenzial individuell aus Temperatur, Volumenstrom und Betriebsstunden berechnet
+- Sweetspot Abgastemperatur: 150–250 °C (BHKW typisch 400–550 °C, Trocknung 60–150 °C inkl. Kondensationswärme)
+- Über 100 realisierte Anlagen seit 1980
+- Richtwert Komplettsystem im unteren Leistungsbereich: 60.000–80.000 EUR; größere Anlagen individuell
+- Förderung (Stand 2026): EEW Modul 4 bis 45 % Zuschuss für kleine Unternehmen (35 % mittlere, 25 % große), Modul 1 bis 25 % für KMU; Antrag vor Auftrag
+- Produktionssicherheit: Bypass führt das Abgas bei Wartung, Störung oder vollem Pufferspeicher direkt zum Kamin – die Produktion läuft immer
+- Kein Bodenstellplatz: Montage an der Decke, direkt über der Anlage oder auf einer Technikebene
+
+## Seiten
+
+- [Startseite](/index.html): Produkt, Prinzip, Anlagenschema, FAQ
+- [Abwärme-Potenzial-Check](/potenzial-check.html): Wirtschaftlichkeitsrechner (Einsparung, CO₂, Amortisation, Förderlogik)
+- [Alle Abgasquellen](/abgasquellen.html): Übersicht aller Anwendungsfälle, branchenoffen
+- [Industrieöfen](/abgas-industrieofen.html): Wärmerückgewinnung am Industrieofen (200–500 °C)
+- [Dampfkessel](/abgas-dampfkessel.html): Wärmerückgewinnung am Dampfkessel (Economiser, 160–230 °C)
+- [Blockheizkraftwerke](/abgas-bhkw.html): Wärmerückgewinnung am BHKW (400–550 °C)
+- [Trocknungsanlagen](/abgas-trocknung.html): Rückgewinnung inkl. Kondensationswärme (60–150 °C)
+- [Backöfen](/abgas-backofen.html): Wärmerückgewinnung am Backofen, gemeinsam mit WP Bakery Technologies
+- [Förderung](/foerderung.html): EEW-Förderung für Abwärmenutzung, goldene Regel „Antrag vor Auftrag“
+- [Referenzen](/referenzen.html): Realisierte Anlagen
+- [Unternehmen](/unternehmen.html): Ganzenmüller GmbH, Meisterbetrieb seit 1980
+- [Kontakt](/kontakt.html): Telefon 07392 – 700 10, info@ganzenmueller.de
+
+## Hinweis
+
+Deutsch ist die Quellsprache und steht vollständig serverseitig im HTML.
+Englische Inhalte werden clientseitig per JavaScript umgeschaltet und sind
+nicht unter eigenen URLs erreichbar.

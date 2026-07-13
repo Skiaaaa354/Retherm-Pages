@@ -53,14 +53,27 @@ auf jeder Seite, durchgängig zweisprachig (DE/EN).
 ## Vor Go-Live (offene Punkte)
 
 1. Impressum/Datenschutz: markierte TODO-Boxen klären (Betreiber, USt-ID, Hoster).
-2. Referenzen: Kennzahlen und restliche Projektfotos einsetzen (`referenzen.html`).
-3. Rechner-Annahmen mit realen Anlagendaten abgleichen (`calc-core.js`).
-4. Domain-Entscheidung (Strategie 2.1 offen); danach:
-   - `sitemap.xml`: Platzhalter `https://IHRE-DOMAIN.de` ersetzen,
-     Sitemap-Zeile in `robots.txt` aktivieren;
-   - Canonical-Tags und `hreflang` ergänzen; Open-Graph-Tags mit absoluter
-     Bild-URL nachziehen;
+2. Referenzen: Kennzahlen und restliche Projektfotos einsetzen (`referenzen.html`) –
+   laut SEO-Audit der sichtbarste Schwachpunkt („folgt“-Platzhalter direkt
+   neben dem Anspruch „Zahlen verkaufen“).
+3. TÜV-Süd-Nachweis: Zertifikatsnummer oder verlinktes Zertifikats-PDF
+   ergänzen (mind. auf `unternehmen.html`) – stärkt E-E-A-T.
+4. Rechner-Annahmen mit realen Anlagendaten abgleichen (`calc-core.js`).
+5. Kontaktformulare: mailto funktioniert bei Webmail-Nutzern (Outlook Web,
+   Gmail) oft nicht – vor Ads-Start echten Formularversand ergänzen
+   (z. B. Formspree/serverless), sonst gehen Leads verloren.
+6. Domain-Entscheidung (Strategie 2.1 offen); danach:
+   - `sitemap.xml` + `robots.txt`: Platzhalter `https://IHRE-DOMAIN.de`
+     ersetzen, Sitemap-Zeile in robots.txt aktivieren; `llms.txt` prüfen;
+   - Canonical-Tags auf allen Seiten ergänzen (Muster:
+     `<link rel="canonical" href="https://DOMAIN.de/seite.html">`);
+   - Open-Graph/Twitter-Tags mit absoluter Bild-URL (1200×630-OG-Bild aus
+     der RETHERM-Einheit erstellen), `logo`/`url` im Organization-Schema,
+     BreadcrumbList- und WebSite-JSON-LD nachziehen;
    - Google Search Console einrichten und Sitemap einreichen.
-5. Google-Ads-Conversion-Tracking erst nach Cookie-/Consent-Entscheidung –
+7. Google-Ads-Conversion-Tracking erst nach Cookie-/Consent-Entscheidung –
    aktuell ist die Seite bewusst tracking-frei (Strategie verlangt Tracking
    vor dem ersten Ads-Euro; dafür braucht es dann eine Consent-Lösung).
+8. Mittel-/langfristig (SEO international): Englisch liegt nur als
+   JS-Umschaltung vor und ist für Google/AI-Crawler unsichtbar; bei Bedarf
+   echte `/en/`-URLs mit hreflang einführen.

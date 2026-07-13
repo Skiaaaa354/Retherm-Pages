@@ -6,7 +6,7 @@ Object.assign(I18N.en, {
   'kessel.title': 'Heat recovery from steam boilers | RETHERM',
   'kessel.desc': 'Behind steam and hot-water boilers, flue gas leaves at typically 160–230 °C – over thousands of operating hours. RETHERM recovers that heat as a complete economiser system: for feedwater, heating and hot water, with flue gas heat exchanger, bypass, induced-draft fan and Siemens controls.',
   'kessel.h1': 'Heat recovery from steam boilers: <em>less fuel for the same steam.</em>',
-  'kessel.lead': 'Steam and hot-water boilers in the process industries often run for thousands of hours a year – sending flue gas at typically 160 to 230 °C up the chimney. An economiser brings that heat back. As a rule of thumb: around 1 % fuel saving for every 20 K or so of flue gas cooling.',
+  'kessel.lead': 'Steam and hot-water boilers in the process industries often run for thousands of hours a year – sending flue gas at typically 160 to 230 °C up the chimney. RETHERM is a turnkey complete system by Ganzenmüller GmbH for heat recovery from flue gas – at the steam boiler it works as an economiser and brings that heat back. As a rule of thumb: around 1 % fuel saving for every 20 K or so of flue gas cooling.',
 
   'kessel.a.tag': '01 — The starting point',
   'kessel.a.h2': 'Your boiler makes steam. Its flue gas makes nothing.',
@@ -57,4 +57,15 @@ Object.assign(I18N.en, {
   'kessel.c.dMail': 'E-mail',
   'kessel.c.dNext': 'Also relevant',
   'kessel.c.dNextLink': 'Funding for waste-heat projects →',
+
+  'kessel.faq.tag': '04 — Frequently asked',
+  'kessel.faq.h2': 'What boiler operators ask us first.',
+  'kessel.faq.q1': 'How much fuel does an economiser save on a steam boiler?',
+  'kessel.faq.a1': 'As a rule of thumb, an economiser saves around 1 % of fuel for every 20 K or so of flue gas cooling. Behind steam and hot-water boilers, the flue gas temperature without heat recovery is typically 160 to 230 °C – so there is room for savings of several per cent. Cool the flue gas deep enough and the water vapour in it condenses and releases its latent heat; this condensing effect raises the yield further. How much is possible at your boiler depends on flue gas temperature, volume flow and operating hours – the potential check works it out with your figures.',
+  'kessel.faq.q2': 'Can an existing steam boiler be retrofitted with heat recovery?',
+  'kessel.faq.a2': 'Yes – retrofitting is the normal case. RETHERM sits as a turnkey complete system in the flue gas path behind your existing boiler; no intervention in the boiler itself is needed. The standard induced-draft fan compensates for the additional resistance in the flue gas path and keeps the draught conditions at the burner stable. The unit needs no floor space: it is suspended from the ceiling, mounted directly above the plant or installed on a second service level; only the buffer tank needs a spot, usually in the boiler room. Flue gas heat exchanger, bypass damper, Siemens controls and chimney connection come from a single source.',
+  'kessel.faq.q3': 'What happens during maintenance or a fault – does the steam supply stop?',
+  'kessel.faq.a3': 'No, the steam supply keeps running. The standard bypass routes the flue gas straight to the chimney during maintenance, in the event of a fault or when the buffer tank is full – the boiler then runs as if the recovery unit were not there. This design is tested and certified by TÜV Süd. Day-to-day effort stays small: the flue gas heat exchanger largely cleans itself via its self-cleaning function, and one service appointment per year is planned in.',
+  'kessel.faq.q4': 'Is an economiser worthwhile at my operating hours?',
+  'kessel.faq.a4': 'The more operating hours, the sooner the system pays for itself – with continuous steam demand, 4,000 to 8,000 hours a year are typical, and every full-load hour works towards the payback. A complete system typically pays back within a few years; EEW funding (as of 2026 up to 45 per cent grant for small companies, apply before ordering) shortens the sums further. For context: our promise of “¼ of the energy back – guaranteed” applies to the bakery oven segment; at steam boilers we calculate the potential individually from flue gas temperature, volume flow and operating hours. The potential check gives you an honest range in a minute.',
 });

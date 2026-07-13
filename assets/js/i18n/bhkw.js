@@ -6,7 +6,7 @@ Object.assign(I18N.en, {
   'bhkw.title': 'Heat recovery from CHP units | RETHERM',
   'bhkw.desc': 'CHP exhaust is extremely hot at typically 400–550 °C and runs on base load for thousands of hours a year. RETHERM retrofits a flue gas heat exchanger downstream and raises the overall efficiency – with induced-draft fan, bypass and chimney integration as a complete system, without ever putting the engine at risk.',
   'bhkw.h1': 'Heat recovery from CHP units: <em>the hottest flue gas runs on base load.</em>',
-  'bhkw.lead': 'A combustion engine releases its exhaust at typically 400 to 550 °C – hotter than almost any other flue gas source on site. And because CHP units often run 4,000 to 8,000 hours a year on base load, every unused degree turns into a large number.',
+  'bhkw.lead': 'A combustion engine releases its exhaust at typically 400 to 550 °C – hotter than almost any other flue gas source on site. And because CHP units often run 4,000 to 8,000 hours a year on base load, every unused degree turns into a large number. RETHERM is a turnkey complete system by Ganzenmüller GmbH for heat recovery from flue gas – fitted downstream of the CHP, with no intervention in the engine.',
 
   'bhkw.a.tag': '01 — The starting point',
   'bhkw.a.h2': 'Your CHP uses the cooling water fully. Its exhaust, often not.',
@@ -57,4 +57,15 @@ Object.assign(I18N.en, {
   'bhkw.c.dMail': 'E-mail',
   'bhkw.c.dNext': 'Also relevant',
   'bhkw.c.dNextLink': 'Funding for waste-heat projects →',
+
+  'bhkw.faq.tag': '04 — Frequently asked',
+  'bhkw.faq.h2': 'What CHP operators ask us first.',
+  'bhkw.faq.q1': 'Is heat recovery worth it on a CHP unit at all?',
+  'bhkw.faq.a1': 'Yes, in many cases – two favourable factors come together at a CHP unit. The exhaust leaves the engine at typically 400 to 550 °C, hotter than almost any other source; our sweet spot starts as low as 150 °C. And because CHP units on base load often run 4,000 to 8,000 hours a year, the recovery unit works along almost continuously. Important context: our promise of “¼ of the energy back – guaranteed” applies to the baking oven segment; at a CHP unit we calculate the potential individually from exhaust temperature, volume flow and operating hours. That is exactly what the potential check does in a minute.',
+  'bhkw.faq.q2': 'Does retrofitting a flue gas heat exchanger endanger the CHP engine?',
+  'bhkw.faq.a2': 'No. The critical parameter is the permissible exhaust back pressure – every engine manufacturer approves a range for it. The induced-draft fan of the RETHERM system compensates the resistance of the downstream heat exchanger and keeps the back pressure within that range, sized for your engine rather than an average. On top of that comes the bypass as standard: during maintenance, in case of a fault or when the buffer tank is full, the exhaust flows straight to the chimney as if the recovery unit were not there. Your CHP therefore keeps running without interruption in every operating state – electricity and heat generation always have priority. The systems are tested and certified by TÜV Süd.',
+  'bhkw.faq.q3': 'Does heat recovery also work on biogas CHP units?',
+  'bhkw.faq.a3': 'Yes – biogas CHP units are in fact among the typical applications. Their exhaust does carry soot and deposits; the heat exchanger is designed for that: smooth tubes that little sticks to, instead of delicate fins, plus a self-cleaning function and a large cleaning hatch. Servicing stays at one appointment per year. The second advantage is the heat demand: at a biogas plant, digester heating and drying are permanent consumers – the recovered heat directly replaces heat that would otherwise have to be generated or purchased.',
+  'bhkw.faq.q4': 'What does the additional heat from the CHP exhaust actually deliver?',
+  'bhkw.faq.a4': 'It raises the overall efficiency of your CHP: the same engine, the same electricity generation, but more usable heat. The recovered heat first flows into the buffer tank and from there into the heating circuit, hot water or process heat; at biogas CHP plants into digester heating and drying, on request also into a local or district heat network. A heat demand is the prerequisite – we check that honestly before we quote. The investment qualifies for the German EEW programme, as of 2026 with a grant of up to 45 percent under Module 4 for small companies. The most important rule: apply before you order.',
 });

@@ -6,7 +6,7 @@ Object.assign(I18N.en, {
   'trock.title': 'Heat recovery from drying plants | RETHERM',
   'trock.desc': 'Dryers discharge warm, moist exhaust air at 60–150 °C – a large share of the energy sits as latent heat in the water vapour. RETHERM recovers the condensation heat too: a complete system with heat exchanger, buffer tank, controls and chimney integration.',
   'trock.h1': 'Heat recovery from drying plants: <em>the energy is in the vapour.</em>',
-  'trock.lead': 'Timber, paint, food, textiles, sewage sludge or bricks: dryers discharge warm, moist exhaust air at typically 60 to 150 °C. That sounds modest – yet a large share of the energy is not in the temperature but sits as latent heat in the water vapour.',
+  'trock.lead': 'Timber, paint, food, textiles, sewage sludge or bricks: dryers discharge warm, moist exhaust air at typically 60 to 150 °C. That sounds modest – yet a large share of the energy is not in the temperature but sits as latent heat in the water vapour. RETHERM is a turnkey complete system by Ganzenmüller GmbH for heat recovery from exhaust gas – and at dryers it recovers that condensation heat too.',
 
   'trock.a.tag': '01 — The starting point',
   'trock.a.h2': 'Your dryer evaporates water. The energy for it leaves through the roof.',
@@ -57,4 +57,15 @@ Object.assign(I18N.en, {
   'trock.c.dMail': 'E-mail',
   'trock.c.dNext': 'Also relevant',
   'trock.c.dNextLink': 'Funding for waste-heat projects →',
+
+  'trock.faq.tag': '04 — Frequently asked questions',
+  'trock.faq.h2': 'What dryer operators ask us.',
+  'trock.faq.q1': 'Is heat recovery worthwhile at just 60 to 150 °C exhaust air temperature?',
+  'trock.faq.a1': 'Yes, often – because the exhaust air temperature tells only half the story. A large share of the energy sits as latent heat in the water vapour: around 0.6 kWh per kilogram of vapour, which a purely sensible calculation misses entirely. The flue gas heat exchanger cools the exhaust air below the dew point and recovers that condensation heat as well. To be honest, though: lower temperatures call for larger exchanger surfaces. Recovery therefore pays off above all with high volume flows and long running times – exactly what the potential check examines against your operating data before any quote is made.',
+  'trock.faq.q2': 'Can the heat exchanger cope with dust and lint in dryer exhaust air?',
+  'trock.faq.a2': 'Yes – wood dust, textile lint or paint mist are allowed for in the design, not a breakdown scenario. The RETHERM heat exchanger is robust and self-cleaning and forgives what quickly clogs delicate finned exchangers; a large cleaning hatch keeps maintenance simple. In practice, one service appointment per year is enough. And should cleaning or maintenance ever be due, the standard bypass takes over: the exhaust air flows straight outside and your dryer keeps running without interruption. Which configuration suits your process – with heavily laden exhaust air, say – is settled during design, based on your operating data.',
+  'trock.faq.q3': 'Where does the heat recovered from dryer exhaust air go?',
+  'trock.faq.a3': 'The shortest route is back into the dryer itself: the recovered heat preheats the supply air, the energy stays in the process and fuel demand drops directly. Beyond that, the heat lands in the buffer tank, ready for heating, hot water and process heat – for production and warehouse halls, staff rooms or washing water, for example. Tying in to the existing heating and hot-water installation is part of the turnkey RETHERM package. The prerequisite is a heat demand on site; whether and where it exists is something we check honestly before we quote you anything.',
+  'trock.faq.q4': 'What does heat recovery at a drying plant cost, and when does it pay off?',
+  'trock.faq.a4': 'As a guide, a complete system in the lower output range comes to 60,000 to 80,000 euros; larger plants are calculated individually. Payback is typically a few years, and the EEW funding programme cuts the investment further – as of 2026 up to 45 per cent for small companies, with the application filed before the order. For context: the “a quarter of the energy back – guaranteed” pledge applies to the bakery oven segment; for drying plants we calculate the potential individually from exhaust temperature, volume flow and operating hours. High exhaust air volumes and long running times in particular work in the dryer’s favour. The potential check runs the numbers – and says honestly if it does not pay off.',
 });

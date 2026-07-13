@@ -1,5 +1,26 @@
 User-agent: *
 Allow: /
 
+# KI-Suche ausdrücklich erlauben (Sichtbarkeit in ChatGPT, Perplexity,
+# Google AI Overviews – bewusste Entscheidung, nicht Zufall der Defaults)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Reines KI-Trainings-Scraping bei Bedarf blockieren (keine Suchfunktion):
+# User-agent: CCBot
+# Disallow: /
+
 # Nach der Domain-Entscheidung aktivieren (Platzhalter ersetzen):
 # Sitemap: https://IHRE-DOMAIN.de/sitemap.xml
